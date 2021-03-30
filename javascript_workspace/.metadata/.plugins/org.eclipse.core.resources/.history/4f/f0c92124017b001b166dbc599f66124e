@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 10</title>
+<script>
+	var number = [];
+	var lotto =[];
+	for(var i =1; i<=45;i++){
+		number.push(i);
+	}
+	//6개의 번호 저장
+	for(var i = 0;i<6;i++){
+		lotto.push(Math.floor(Math.random()*number.length));
+	}
+	//오름차순 정렬
+	lotto.sort(function (a,b)){
+		return a - b;
+	}
+	document.write('로또 번호 : '+lotto.toString());
+</script>
+</head>
+<body>
+
+</body>
+</html>

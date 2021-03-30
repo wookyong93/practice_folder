@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제13</title>
+<script type="text/javascript">
+	window.onload =function(){
+		var start = document.getElementById('start');
+		var end = document.getElementById('end');
+		var increase;
+		var i = 0;
+		start.onclick=function(){
+			increase = setInterval(function(){
+				i++;
+				alert('시작 '+i);
+			},2000)
+		}
+		end.onclick=function(){
+			clasrInterval(increase);
+			alert('멈춤 '+i);
+		}
+	}
+</script>
+</head>
+<body>
+	<button id = 'start'> 시작 </button>
+	<button id = 'end'> 종료 </button>
+</body>
+</html>

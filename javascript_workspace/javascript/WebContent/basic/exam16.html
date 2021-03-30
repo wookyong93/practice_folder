@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>if 문 </title>
+<script>
+	//prompt 받아온 값의 자료형은 문자열
+	//문자열을 숫자로 변경하고자 한다면 형 변환을 해야 한다.
+	var html =Number(prompt('html 점수입력',''));
+	var css = Number(prompt('css 점수입력',''));
+	var javascript =Number(prompt('javascript 점수 입력',''));
+	var avg = (html+css+javascript) / 3 ;
+	var comment;
+	
+	if(avg >= 60){
+		if(html<40){
+			comment ='html: '+ html +'점 / 40점 미만으로 불합격';
+		}else if(css<40){
+			comment = 'css:'+css +'점 / 40점 미만으로 불합격';
+		}else if(javascript< 40){
+			comment = 'javascript : '+javascript+'점 / 40점 미만으로 불합격';	
+		}else{
+			comment = '평균'+avg+'점 합격';
+		}
+	}else{
+		comment = '평균'+avg+'점 불합격';
+	}
+	document.write(comment);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

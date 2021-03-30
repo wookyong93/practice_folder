@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+function login(){
+	var id= document.getElementById('id').value;
+	var pwd = document.getElementById('pwd').value;
+	
+	if(id =='user' && pw=='1234'){
+		alert('로그인 성공')
+	}else{
+		alert('로그인실패')
+		}
+}
+function endPro(){
+	window.close();
+}
+function join(){
+	alert('회원가입클릭');
+}

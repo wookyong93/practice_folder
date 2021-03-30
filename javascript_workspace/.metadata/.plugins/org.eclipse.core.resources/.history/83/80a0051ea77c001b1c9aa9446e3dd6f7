@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+function main(){
+	let curTime = new Date();
+	
+	setTimeView();
+	setTimeDateView(curTime);
+	setCalendarYearManth(curTime);
+	setCalendarDate(curTime);
+	setMoveBtn();
+	setTimeWindowMinibumBtn();
+	setCalendarWindowMinimumBtn();
+}
+function setTImeWindowMinimumBtn(){
+	let timeWindowCtlBtn= document.getElementById('timeWindowCtlBtn');
+	timeWindowCtlBtn.addEventListener('click',() => {
+		let timeWindowCtlBtn = document.getElementById('timeWindowCtlBtn');
+		let timeMain=document.getElementById('timeMain');
+		let timeView=document.getElementById('timeView');
+		let timeDateView = document.getElementById('timeDateView');
+		
+		if(timeWindowCtlBtn.innerText == '▽'){
+			timeMain.setAttribute('class','minimum');
+			timeView.setAttribute('class','minimum');
+			timeDateView.setAttribute('class',minimum);
+			
+			timeWindowCtlBtn.innerHTML='□';
+		}else{
+			timeMain.removeAttribute('class');
+			timeview.removeAttribute('calss');
+			timeDateView.removeAttribute('class');
+			
+			timeWindowCtlBtn.innerHTML='▽';
+			}
+	});
+}
+function setMoveBtn(){
+	let calendarBeforeBtn = document.getElementById('calendarBeforeBtn');
+	let calendarAfterBtn=document.getElementById('calendarAfterBtn');
+	
+	calendarBeforeBtn.addEventListener('click',moveCalendar);
+	calendarAfterBtn.addEventListener('click',moveCalendar);
+}
+function moveCalrendar(event){
+	let oldYearMonth = document.getElementById('calendarYearMonth');
+	
+	let temp = oldYearMonth.innerText.split(' '/*'년'*/);
+	//console.log(temp); // '2020년' "1월"
+	
+	let oldYear = temp[0].split('년');
+	console.log(oldYear);
+}

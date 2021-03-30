@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{
+	margin:0px;
+}
+body{
+	padding:20px;
+}
+h1,p{
+	font-weight: normal;
+	margin: 5px 0px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>Light Box</h1>
+		<img class ='thumb' src='../img/car01.png' width='100'/>
+		<img class ='thumb' src='../img/car02.png' width='100'/>
+		<img class ='thumb' src='../img/car03.png' width='100'/>
+	</header>
+	<div id='block'></div>
+	<div id='lightBox'>
+		<h1>어큐라 NSX GT3</h1>
+		<p>
+			<table>
+				<tr>
+					<th>모델명</th>
+					<th>배기량</th>
+					<th>최대출력</th>
+					<th>연비</th>
+					<th>출시가</th>
+				</tr>
+				<tr>
+					<th>GT3</th>
+					<th>3,501cc</th>
+					<th>정보 없음</th>
+					<th>정보 없음</th>
+					<th>465,000유로</th>
+				</tr>
+			</table>
+		</p>
+		<figure>
+			<img src='../img/car01.png' alt=""/>
+			<img src='../img/car02.png' alt=""/>
+			<img src='../img/car03.png' alt=""/>
+		</figure>
+	</div>
+	<div class='indicator'>
+		<button>1</button>
+		<button>2</button>
+		<button>3</button>
+	</div>
+	<div class='btnClose'>X</div>
+</body>
+</html>

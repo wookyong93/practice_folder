@@ -1,0 +1,13 @@
+@charset "UTF-8";
+#indexPage{
+	position:absolute;
+	width:500px;
+	height:300px;
+	left:50%;
+	margin-left:-250px;
+	top:50%;
+	margin-top:-150px;
+}
+img{
+	width:100px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 7</title>
+<script>
+	
+	function plus() {
+		var num1 = Number(prompt("첫번째 정수 입력 ",''));
+		var num2 = Number(prompt("두번째 정수 입력 ",''));
+		if(isNaN(num1)){
+			alert("첫번째 입력값 정수 아님");
+			input();
+		}else if(isNaN(num2)){
+			alert("두번째 입력값 정수 아님");
+			input();
+		}else{
+			document.write(num1+" + "+num2+" = "+(num1+num2));
+		}
+	}
+	function division() {
+		var num3 = Number(prompt("첫번째 정수 입력 ",''));
+		var num4 = Number(prompt("두번째 정수 입력 ",''));
+		var val = (num3/num4)
+		
+			if(isFinite(val)){
+				document.write('무한값 : '+val);
+			}else{
+				document.write('유한값 : '+val)
+			}		
+	}
+	function strNum() {
+		var str1 = prompt("첫번째 변수와 값 입력 ",'');
+		var str2 = prompt("두번째 변수와 값 입력 ",'');
+		
+		eval(str1);
+		eval(str2);
+			document.write(num7+num8);	
+	}
+	
+	//plus();
+	//division();
+	strNum();
+</script>
+</head>
+<body>
+
+</body>
+</html>

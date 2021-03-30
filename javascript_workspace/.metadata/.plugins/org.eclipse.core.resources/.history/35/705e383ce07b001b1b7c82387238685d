@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function createEle(){
+		var site = document.getElementById('site');
+		site.innerHTML ='<a href="http://www.google.com" target="_blank">구글</a><br>'
+		site.innerHTML +='<a href="http://www.naver.com" target="_blank">네이버</a>'
+		site.innerHTML +='<a href="http://www.daum.net" target="_blank">다음</a>'
+	}
+	addEventListener('load',createEle);
+</script>
+</head>
+<body>
+	<div id ='site'></div>
+</body>
+</html>

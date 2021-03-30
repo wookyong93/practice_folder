@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 9</title>
+<script>
+	class Student{
+		Info(name,age,address){
+			this.name = name;
+			this.age = age;
+			this.address = address;
+			
+		}
+		get name(){
+			return this.name;
+		}
+		get age(){
+			return this.age;
+		}
+		get address(){
+			return this.address;
+		}
+		insert(){
+			prompt('입력 ' );
+		}
+		printOut(){
+			return'이름 : '+this.name+'<br>나이 : '+this.age+'<br>주소 : '+this.address;
+		}
+		
+	}
+	
+	var stu1 = new Student();
+	stu1.Info(insert(),insert(),insert());
+	document.write(stu1.printOut());
+			
+</script>
+</head>
+<body>
+
+</body>
+</html>

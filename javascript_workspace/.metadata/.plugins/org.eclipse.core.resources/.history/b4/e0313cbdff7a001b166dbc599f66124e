@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 10</title>
+<script>
+	var lotto=[];
+	var num = 0;
+	var show =[];
+	
+	for(var i = 1 ; i<=45;i++){
+		lotto.push(i);
+	}
+	
+		
+		
+	for(var j = 0 ; j<6; j++){
+		num = Math.floor(Math.random()*lotto.length);
+		if(show[j]!=num){
+			show[j] = lotto[num];
+		}else{
+			continue;
+			}
+		
+	}
+	show.sort(function (a,b){
+		return a-b;
+	})
+	console.log(num);
+	console.log(show.toString());
+		
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

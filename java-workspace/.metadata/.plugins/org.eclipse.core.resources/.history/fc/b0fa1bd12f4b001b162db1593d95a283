@@ -1,0 +1,52 @@
+package ex05;
+
+import java.util.Scanner;
+
+public class Quiz03_01답 {
+	public static void main(String[] args) {
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.print("동전 입력 : ");
+		int coin = sc. nextInt();
+		
+		System.out.print("메뉴 선택 : ");
+		int menu =sc. nextInt();
+		int ret = coin;
+		String nm = null;
+		while(true) {
+				switch (menu) {
+				case 1 : 
+					if(coin >= 250) {
+					nm = "커피";
+					ret = coin -250;
+					break;
+					}
+				case 2 : 
+					if(coin >= 200) {
+						nm = "율무차";
+					ret = coin -200;
+					break;
+					}
+				case 3 :
+					if(coin >= 150) {
+						nm = "코코아";
+					ret = coin -150;
+					break;
+					}
+				case 4 : 
+					System.out.println("반환금액 : "+coin);
+					break;
+				default : 
+					System.out.println("잘못된 메뉴선택입니다.");
+					break;}
+					if (coin == ret) {
+					System.out.println("금액이 모자릅니다.");
+					}else {
+						System.out.println(nm+"가 나왔습니다.");
+					}
+					System.out.println("반환금액 : "+ ret);
+				}
+			
+		}
+	}
+	

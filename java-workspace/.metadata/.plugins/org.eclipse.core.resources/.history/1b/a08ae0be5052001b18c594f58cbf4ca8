@@ -1,0 +1,28 @@
+package Exam;
+
+public class ExamInfor {
+	private String cpu;
+	private String ram;
+	private String mb;
+	public String getCpu() {
+		return cpu;
+	}
+	public void setCpu(String cpu) {
+		this.cpu = cpu;
+	}
+	public String getRam() {
+		return ram;
+	}
+	public void setRam(String ram) {
+		this.ram = ram;
+	}
+	public String getMb() {
+		return mb;
+	}
+	public void setMb(String mb) {
+		this.mb = mb;
+	}
+	
+	
+	
+}

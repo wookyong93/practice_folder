@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트</title>
+<style>
+	*{
+		margin: 0; 
+		padding : 0;
+	}
+	#outer{
+		background: ff0000;
+		padding : 20px;
+	}
+	#inner{
+		background: #00ff00;
+		padding : 20px;
+	}
+</style>
+<script>
+	window.onload = function(){
+		var out = document.getElementById('outer');
+		var inn = document.getElementById('inner');
+		out.onclick = function(event){
+			alert('부모 이벤트');
+		};
+		inn.onclick = function(event){
+			alert('자식 이벤트');
+			event.stopPropagation();
+		};
+	}
+</script>
+</head>
+<body>
+	<div id='outer'>
+		<p id='inner'>클릭</p>
+	</div>
+</body>
+</html>

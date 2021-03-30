@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<table>
+			<tr>
+				<th colspan =4>
+				<input type = 'text' id = 'result' value ="0">
+				</th>
+			</tr>
+			<tr>
+				<td><input type='button' alue ='7'></td>
+				<td><input type='button' alue ='8'></td>
+				<td><input type='button' alue ='9'></td>
+				<td><input type='button' alue ='+'></td>
+			</tr
+			<tr>
+				<td><input type='button' alue ='4'></td>
+				<td><input type='button' alue ='5'></td>
+				<td><input type='button' alue ='6'></td>
+				<td><input type='button' alue ='-'></td>
+			</tr>
+			<tr>
+				<td><input type='button' alue ='1'></td>
+				<td><input type='button' alue ='2'></td>
+				<td><input type='button' alue ='3'></td>
+				<td><input type='button' alue ='*'></td>
+			</tr>
+			<tr>
+				<td colspan=2><input type ='button' value ='0'></td>
+				<td><input type='button' value='&'></td>
+				<td><input type='button' value='/'></td> 
+			</tr>
+			<tr>
+				<td><input type ='button' value='c'></td>
+				<td><input type='button' value='<'></td>
+				<td colspan=2><input type='button' value='='></td>
+			</tr>
+		</table>
+
+</body>
+</html>

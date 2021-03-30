@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz 05</title>
+
+<script>
+		function menu(){
+			var menu = Number(prompt('메뉴 선택 1. 합격 여부 2. 구구단 3. 사칙연산',''))
+			return menu;
+		}
+		
+		function menu1() {
+			var score =Number(prompt('점수 입력 : ',''))
+				if(score>=0 && score <=100){
+					if(score >=60){
+						document.write('합격입니다.')
+					}else{
+						document.write('불합격입니다.')
+					}
+				}else{
+					document.write('점수 입력은 0~100으로 해주세요')
+				}
+		}
+		function menu2() {
+			var dan = Number(prompt('몇단을 출력하시겠습니까 ? ',''));
+				if(dan >= 1 && dan<= 9){
+					var msg = '<table border = 1 ><th>'+dan+'단</th>'
+					for(var i = 1; i<10; i++){
+						msg +='<tr><td>'+dan+"x"+i+"="+(dan*i);
+					}
+					msg += '</table>';
+					
+				}else{
+					msg = '1~9까지의 수만 입력이 가능합니다.';
+				}
+				document.write(msg);
+		}	
+		
+		function menu3() {
+			var num1 = Number(prompt('첫번째 정수 입력 ',''));
+			var num2 = Number(prompt('두번째 정수 입력',''));
+			var table = '<table border = 1 ><th>사칙연산</th>'+
+			'<tr><td>'+num1+'+'+num2+'='+(num1+num2)+'</td></tr>'+
+			'<tr><td>'+num1+'-'+num2+'='+(num1-num2)+'</td></tr>'+
+			'<tr><td>'+num1+'*'+num2+'='+(num1*num2)+'</td></tr>'+
+			'<tr><td>'+num1+'/'+num2+'='+(num1/num2)+'</td></tr></table>';
+			document.write(table);
+		}
+
+		var menu = menu();
+		if(menu==1){
+			menu1();
+		}else if(menu ==2){
+			menu2();
+		}else if(menu ==3){
+			menu3();
+		}
+</script>
+</head>
+<body>
+
+</body>
+</html>

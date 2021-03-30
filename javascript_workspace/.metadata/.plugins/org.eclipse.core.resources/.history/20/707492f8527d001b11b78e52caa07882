@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+function login(){
+	alert('로그인버튼 클릭');
+}
+function endPro(){
+	alert('프로그램 종료');
+}
+function join(){
+	alert('회원가입클릭');
+}

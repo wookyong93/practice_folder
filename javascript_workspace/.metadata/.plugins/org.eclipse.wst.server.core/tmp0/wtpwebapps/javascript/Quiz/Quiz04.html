@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz04</title>
+<script>
+	var num = 0;
+	do{
+	num = Number(prompt('점수를 입력 해주세요 ',''));
+	var msg;
+		if(num<0 || num>100){
+			alert("잘못 입력 되었습니다.0~100사이의 수를 입력해주세요.")
+		}else if(num >= 90){
+			document.write('A학점');
+		}else if(num >= 80){
+			document.write('B학점');
+		}else if(num >= 70){
+			document.write('C학점');
+		}else if(num >= 60){
+			document.write('D학점');
+		}else{
+			document.write('F학점');
+		}
+	}while(num<0 || num>100 );
+</script>
+</head>
+<body>
+
+</body>
+</html>

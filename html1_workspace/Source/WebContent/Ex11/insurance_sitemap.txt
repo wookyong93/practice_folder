@@ -1,0 +1,64 @@
+﻿<!-- 생략 -->
+<style>
+* {
+    margin:0;
+    padding:0; }
+body {
+    ____________________:"맑은 고딕", "돋움";
+    font-size:12px;
+    color:#444444; }
+ul {
+    _____________________:none; }
+#page {
+    width:980px;
+    _______________:0 auto; }           /* 전체 페이지 중앙 정렬 */
+#sitemap {
+    padding:20px 0 0 15px; }
+#sitemap div {
+    height:140px;
+    ______________________;
+    margin:0 15px 0 15px; }
+#sitemap h3{
+    font-size:15px;
+    _________________:#12b9b2;
+    margin-left:16px; }
+#sitemap ul{
+    color:#666666; }
+#sitemap li{
+    margin:5px 0 0 20px;
+    ___________________________:url("img/blue_dot.gif"); }
+</style>
+</head>
+<body>
+<div id="page">
+  <_______________________ id="sitemap">
+    <div>
+      <h3>손해보험 상식</h3>
+      <ul>
+        <li>손해보험이란?</li><li>나에게 필요한 보험은?</li>
+        <li>보험약관의 중요성</li><li>손해보험의 특징</li>
+      </ul>
+    </div>
+    <div>
+      <h3>루바토 보험의 장점</h3>
+      <ul>
+        <li>보험료 저렴</li><li>신속한 처리 및 보상</li><li>만기 시 원리금 보장</li>
+      </ul>
+    </div>
+    <div>
+      <h3>가입안내</h3>
+      <ul>
+        <li>공인인증센터</li><li>인증서 발급/갱신</li>
+        <li>인증서 폐기</li><li>웹 로그인</li>
+      </ul>
+    </div>
+    <div>
+      <h3>회사소개</h3>
+      <ul>
+        <li>기업소개</li><li>찾아오시는 길</li>
+      </ul>
+    </div>
+  </section>		
+</div> <!-- page -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+function main(){
+	let thumbImg=document.getElementsByClassName('thumb');
+	for(let i=0;i<img.length;i++){
+		thumbImg[i].addEventListener('click',LightBoxOpen);
+	}
+	let btnClose =document.querySelector('.btnClose');
+	btnClose.addEventListener('click',LightBoxClose);
+	
+}
+function imgChange(event){
+	let img = getImage();
+	initImage(img);
+	img[event.target.id-1].setAttribute('class','active');
+	
+	setCarInfo(event.target.id-1);
+}
+function LightBoxOpen(event){
+	imgChange(event);
+	
+	let lightBox = document.querySelector('#lightBox');
+	let block = document.querySelector('#block');
+	
+	lightBox.setAttribute('class','active');
+	block.setAttribute('class','active');
+}
+function getImage(){
+	let figure = document.querySelector('figure');
+	return figure.children;
+}
+function initImage(img){
+	for(let i=0;i<img.length;i++){
+		img[i].removeAttributr('class');
+	}
+}

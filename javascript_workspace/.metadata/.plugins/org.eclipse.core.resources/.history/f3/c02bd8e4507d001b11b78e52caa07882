@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>멜론 로그인</title>
+<style>
+	*{
+		margin : 0;
+		padding: 10px;
+	}
+	#login_main{
+		width: 600px;
+		height: 400px;
+		position:absolute;
+		left:50%;
+		margin-left:-150px;
+		top:50%;
+		margin-top:-50px; 
+	
+	}
+	img{
+		width :200px;
+	}
+	main{
+	text-align: center;
+	}
+	h1{
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 50px;
+	}
+	table{
+		width : 100%;
+	
+	}
+	th{
+		text-align: center;
+		font-size:20px;
+	}
+	input
+	{
+		width: 80%;
+		padding: 10px;
+	}
+	div{
+		width: 100%;
+		margin-top: 50px;
+	}
+	button{
+		width:120px;
+		text-align: center;
+		padding : 10px;
+		font-size : 16px;
+		background-color: lightgreen;
+		color:white;
+		border-radius: 6px;
+		margin : 5px 15px ;
+	}
+</style>
+</head>
+<body>
+<div id='login_main'>
+	<div id='logo'>
+		<a href='login_main.html'><img src=melon.jpg></a>
+	</div>
+	
+	<div id='title'>
+		<h1>음악 스트리밍 시스템</h1>
+	</div>
+		<div id='login'>
+			<table>
+				<tr>
+					<th>아이디</th><td><input type='text'></td>
+				</tr>
+				<tr>
+					<th>패스워드</th><td><input type='password'></td>
+				</tr>
+			
+			</table>
+		</div>
+			<div id='btn'>
+				<button type='submit' onClick="location.href='Main_page.html'">로그인</button>
+				<button onClick ='window.close()'>종료</button>
+				<button type='submit' onClick="location.href='Join_page.html'">회원가입</button>
+			</div>
+	</div>
+</body>
+</html>

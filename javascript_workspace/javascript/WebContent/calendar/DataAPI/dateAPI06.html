@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let curYear = new Date().getFullYear();
+	for(let i = 0 ; i< 12 ; i++){
+		document.write((i+1)+'월 : ');
+		document.write(32 - new Date(curYear,i,32).getDate());
+			//현재연도의 i월에 32의 값의 getDate() 값을 보내면 
+			//(32 -31(i월에 일수))을 뺴준다
+			// 32-(위에 값) = 해당월에 일수
+		document.write('<br>');
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

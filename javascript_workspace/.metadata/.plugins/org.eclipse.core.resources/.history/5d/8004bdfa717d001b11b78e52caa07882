@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>음악 스트리밍 시스템</title>
+<style>
+#mainPage{
+	position:absolute;
+	width: 650px;
+	height: 500px;
+	top:50%;
+	margin-top: -250px;
+	left:50%;
+	margin-left: -325px;
+	text-align: cneter; 
+}
+#logo {
+	width: 100%;
+	margin-bottom:30px;
+	font-size: 20px;
+	font-weight: bold;
+	padding : 10px;
+} 
+#logo > img{
+	width: 150px;	
+	text-align: left;
+	margin-right: 10px;
+}
+#logo > button{
+	width: 100px;
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	padding : 5px;
+}
+#search{
+	text-align: center;
+	margin-bottom:20px;
+}
+#search input[type='text']{
+	width: 50%;
+	padding: 5px;
+}
+#search > label{
+ font-size: 20px;
+ padding : 10px;
+}
+#search input[type='button']{
+	width: 100px;
+	padding: 5px;
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	margin : 5px;
+}
+#txt {
+	text-align: center;
+	font-size: 24px;
+}
+#select{
+	width: 100%;
+	text-align: center;
+}
+#select > input[type='button']{
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	font-size: 15px;
+	padding : 5px;
+	width: 100px;
+	margin:5px;
+ 
+}
+
+</style>
+</head>
+<body>
+<div id ='mainPage'>
+	<div id="logo">
+		<img src='img/melon.jpg'> 음악 스트리밍 시스템 <button id='mypage'>내정보</button> <button id='logout'>로그아웃</button>
+	</div>
+	<div id ='search'>
+		<label>검 색</label><input type='text'> <input type='button' id='searchBtn' value ='검색'>
+	</div>
+	<div id ='txt'><h1>장 르 선 택</h1></div>
+	<div id ='select'>
+		<input type='button' id='ballade' value ='발라드'>
+		<input type='button' id='ballade' value ='힙합'>
+		<input type='button' id='ballade' value ='댄스'>
+		<input type='button' id='ballade' value ='락'>
+	</div>
+</div>
+</body>
+</html>

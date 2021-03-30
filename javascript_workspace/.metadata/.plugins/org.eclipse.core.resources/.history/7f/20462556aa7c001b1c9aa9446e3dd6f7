@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href='./css/style.css' type='text/css' rel='stylesheet'>
+<script type='text/javascript' src='./js/script.js'></script>
+</head>
+<body onload='javascript:main();'>
+	<div id='timeMain'>
+		<div id='timeView'>시간</div>
+		<div id='timeWindowCtlBtn'>▽</div>
+		<div id='timeDateView'>날짜</div>
+	</div>
+	<div id='calendarMain'>
+		<div id='calendarYearMonth'>년 월</div>
+		<div id='calendarWindowCtlBtn'>△</div>
+		<div id='calendarDate'>날짜</div>
+		<div id='calendarBeforeBtn'>&lt;</div>
+		<div id='calendarAfterBtn'>&gt;</div>
+	</div>
+</body>
+</html>

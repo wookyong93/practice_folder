@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 10</title>
+<script>
+	var lotto=[];
+	var num = 0;
+	for(var i = 1 ; i<=45;i++){
+		lotto.push(i);
+	}
+	
+		num = Math.floor(Math.random()*lotto.length);	
+	console.log(lotto[num]);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

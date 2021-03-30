@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+function login(){
+	var id= document.getElementById('id').value;
+	var pwd = document.getElementById('pwd').value;
+	
+	if(id =='user' && pwd=='1234'){
+		alert('로그인 성공')
+		location.hrf='mainPage.html';
+	}else if(id =='user' && pwd !='1234'){
+		alert('암호틀림')
+	}else if(id !='user' && pwd =='1234'){
+		alert('아이디틀림')
+	}
+}
+function endPro(){
+	window.close();
+}
+function join(){
+	alert('회원가입클릭');
+}

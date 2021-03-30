@@ -1,0 +1,10 @@
+127.0.0.1 - - [06/Mar/2021:21:45:44 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:47 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/main.html HTTP/1.1" 200 1055
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:47 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/js/main.js HTTP/1.1" 200 446
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:47 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/img/melon.jpg HTTP/1.1" 200 191222
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:47 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/css/main.css HTTP/1.1" 200 1225
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:47 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:52 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/mypage.html HTTP/1.1" 200 142
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:55 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/balladeInfo.html HTTP/1.1" 200 1667
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:55 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/css/balladeInfo.css HTTP/1.1" 200 1360
+0:0:0:0:0:0:0:1 - - [06/Mar/2021:21:45:55 +0900] "GET /eee/%EA%B6%8C%EC%9A%B0%EA%B2%BD/js/balladeInfo.js HTTP/1.1" 200 643

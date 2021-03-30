@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function test(event){
+		result = event.target.value;
+		if(event.target.checked){
+			alert(result+' 추가 했습니다.')
+		}else{
+			alert('삭제하였습니다.')
+		}
+	}
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>test1</td>
+			<td><input type='checkbox' value ='1' onclick='test(event)'></td>
+		</tr>
+		<tr>
+			<td>test2</td>
+			<td><input type='checkbox' value ='2' onclick='test(event)'></td>
+		</tr>
+		<tr>
+			<td>test3</td>
+			<td><input type='checkbox' value ='3' onclick='test(event)'></td>
+		</tr>
+		<tr>
+			<td>test4</td>
+			<td><input type='checkbox' value ='4' onclick='test(event)'></td>
+		</tr>
+	</table>
+</body>
+</html>

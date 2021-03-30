@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date 객체</title>
+<script>
+	var dateObj = new Date(2020,1,14,8,36);
+	var dateInfo = {
+			year : dateObj.getFullYear(),
+			month:dateObj.getMonth(),
+			date : dateObj.getDate(),
+			hours:dateObj.getHours(),
+			minutes:dateObj.getMinutes(),
+			nowDate:dateObj.toUTCString()
+	}
+	for(var i in dateInfo){
+		console.log(i+':'+dateInfo[i]);
+	}
+	//현재 시간을 값으로 변수 저장
+	var now = Date();
+	console.log(now)
+	//문자열 저장
+	
+	//현재시간을 새로운 객체로 변수 저장
+	var now = new Date();
+	//객체 저장
+	console.log(now.geFullYear());
+	console.log(now.getMonth()+1);
+	console.log(now.getDate());
+	console.log(now.getHours());
+	console.log(now.getMinutes());
+	console.log(now.toLocaleDateString('en-us'));
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

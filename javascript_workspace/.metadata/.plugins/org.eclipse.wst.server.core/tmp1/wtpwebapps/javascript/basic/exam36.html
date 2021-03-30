@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class</title>
+<script>
+	class SubjectInfo{
+		constructor(subject,credit){
+			this.subject = subject;
+			this.credit = credit;
+			this.days =[80,120,140];
+			this.day = this.days[0];
+		}
+		printOut(){
+			return '과목 : '+this.subject +
+			', 학점 : '+this.credit+', 수업일수 : '+this.day;
+		}
+		get lessonTime(){
+			return this.day;
+		}
+		set lessonTime(num){
+			this.day=this.days[num];
+		}
+	}
+	var sub1 = new SubjectInfo('html',1);
+	console.log(sub1.subject);
+	console.log(sub1.printOut());
+	//클래스 내부 함수를 호출할때 () 사용
+	sub1.lessonTime = 1;
+	console.log(sub1.lessonTiome);
+	//클래스 내부 함수중 get 함수를 호출할때는 () 사용안함.
+	var sub2 = new SubjectInfo('css', 2);
+	console.log(sub2.subject);
+	sub2.lessonTime=2;
+	console.log(sub1.lessonTime);
+	console.log(sub2.printOut());
+</script>
+</head>
+<body>
+
+</body>
+</html>

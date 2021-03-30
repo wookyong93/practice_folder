@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math 객체</title>
+<script>
+	var lucky = [];
+	var num = 0;
+	for(var i = 1; i<=100;i++){
+		lucky.push(i);
+		//1~100
+	}//lucky 배열 인덱스 0 번부터 i 를 넣으라는 의미;
+	num = Math.floor(Math.random()*lucky.length);
+	//0~99
+	//random 값은 소수점 값을 가지고 있다 
+	//floor는 소숫점값을 버려주는 역할
+	console.log(num);
+	console.log(lucky.toString());
+	console.log('오늘의 당첨 번호는 '+lucky[num]+'입니다.');
+</script>
+</head>
+<body>
+
+</body>
+</html>

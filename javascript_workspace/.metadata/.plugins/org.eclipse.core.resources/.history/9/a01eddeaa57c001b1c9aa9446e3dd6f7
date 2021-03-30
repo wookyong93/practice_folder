@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+function main(){
+	let curTime = new Date();
+	
+	setTimeView();
+	setTimeDateView(curTime);
+	setCalendarYearManth(curTime);
+	setCalendarDate(curTime);
+	setMoveBtn();
+	setTimeWindowMinibumBtn();
+	setCalendarWindowMinimumBtn();
+}

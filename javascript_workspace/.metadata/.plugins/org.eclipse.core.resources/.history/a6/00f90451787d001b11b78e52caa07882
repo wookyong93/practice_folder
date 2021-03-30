@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>음악 스트리밍 시스템</title>
+<link rel="stylesheet" type="text/css" href="css/balladeInfo.css">
+<script type="text/javascript" src = "js/balladeInfo.js"></script>
+</head>
+<body>
+<div id ='listPage'>
+	<div id="logo">
+		<img src='img/melon.jpg'> 음악 스트리밍 시스템 <button id='mypage' onclick ='mypage()'>내정보</button> <button id='logout' onclick = 'logout()'>로그아웃</button>
+	</div>
+	<div id ='search'>
+		<label>검 색</label><input type='text' id ='searchTxt'> <input type='button' id='searchBtn' value ='검색' onclick = 'search()'>
+	</div>
+	<div id ='txt'>장 르 선 택</div>
+	<div id ='songList'>
+		<table>
+			<tr>
+			<th id='num'>순번</th><th id='songName'>제 목</th><th id='singer'>가수</th><th>목록 추가</th>
+			</tr>
+			<tr>
+				<th id='num'>1</th><th id='songName'>Love poem</th><th id='singer'>IU</th><th><input type='checkbox' onclick='select()'></th>
+			</tr>
+			<tr>
+				<th id='num'>2</th><th id='songName'>힘든건 사랑이 아니다</th><th id='singer'>임창정</th><th><input type='checkbox' onclick='select()'></th>
+			</tr>
+			<tr>
+				<th id='num'>3</th><th id='songName'>밤편지</th><th id='singer'>IU</th><th><input type='checkbox' onclick='select()'></th>
+			</tr>
+			<tr>
+				<th id='num'>4</th><th id='songName'>너를 만나</th><th id='singer'>폴킴</th><th><input type='checkbox' onclick='select()'></th>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

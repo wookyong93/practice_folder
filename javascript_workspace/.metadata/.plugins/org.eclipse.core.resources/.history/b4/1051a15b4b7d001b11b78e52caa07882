@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>멜론 로그인</title>
+<style>
+	*{
+		margin : 0;
+		padding: 10px;
+	}
+	body{
+		width: 640px;
+		margin:0 auto;
+	
+	}
+	img{
+		width :200px;
+	}
+	main{
+	text-align: center;
+	}
+	h1{
+		font-size: 32px;
+		font-weight: bolder;
+		margin-bottom: 50px;
+	}
+	table{
+		width : 100%;
+	
+	}
+	th{
+		text-align: center;
+		font-size:20px;
+	}
+	input
+	{
+		width: 80%;
+		padding: 10px;
+	}
+	div{
+		width: 100%;
+		margin-top: 50px;
+	}
+	button{
+		width:120px;
+		text-align: center;
+		padding : 10px;
+		font-size : 16px;
+		background-color: lightgreen;
+		color:white;
+		border-radius: 6px;
+		margin : 5px 15px ;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<a href='login_main.html'><img src=melon.jpg></a>
+	</header>
+	<main>
+		<article>
+			<h1>음악 스트리밍 시스템</h1>
+		</article>
+		<article>
+			<table>
+				<tr>
+					<th>아이디</th><td><input type='text'></td>
+				</tr>
+				<tr>
+					<th>패스워드</th><td><input type='password'></td>
+				</tr>
+			
+			</table>
+			<div>
+				<button type='submit'>로그인</button>
+				<button>종료</button>
+				<button type='submit'>회원가입</button>
+			</div>
+		</article>
+	
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+2월 23, 2021 11:06:36.761 NEW SESSION
+2월 23, 2021 11:06:36.761 [8040:4212:0223/110636.758:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+2월 23, 2021 11:06:37.176 [8040:4212:0223/110636.758:ERROR:cache_util.cc(144)] Unable to move cache folder C:\Users\i7C\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\i7C\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+2월 23, 2021 11:06:37.225 기존 브라우저 세션에서 여는 중입니다.
+2월 23, 2021 11:06:37.254 [8040:4212:0223/110636.758:ERROR:disk_cache.cc(184)] Unable to create cache
+2월 23, 2021 11:06:37.292 [8040:4212:0223/110636.758:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2

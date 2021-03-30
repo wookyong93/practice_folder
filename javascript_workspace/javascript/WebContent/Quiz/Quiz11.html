@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 11</title>
+<script>
+	class Score{
+		name;
+		kor;
+		eng;
+		math;
+		set setName(name){
+			this.name = name;
+		}
+		set setKor(kor){
+			this.kor = kor;
+		}
+		set setEng(eng){
+			this.eng = eng;
+		}
+		set setMath(math){
+			this.math = math;
+		}
+		output(){
+			return '이름 : '+this.name+'<br>국어점수 : '+this.kor+'<br>영어점수 : '+this.eng+'<br>수학점수 : '+this.math+'<br>';
+			}
+	}
+	var sco1 = [];
+	var count = Number(prompt('입력할 학생수 입력'));
+	for(var i = 0; i<count ;i++){
+		sco1[i] = new Score();
+		sco1[i].name = prompt('이름 입력 ');
+		sco1[i].kor = prompt('국어점수 입력 ');
+		sco1[i].eng = prompt('영어점수 입력 ');
+		sco1[i].math = prompt('수학점수 입력 ');
+		
+		document.write(sco1[i].output());
+	}
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

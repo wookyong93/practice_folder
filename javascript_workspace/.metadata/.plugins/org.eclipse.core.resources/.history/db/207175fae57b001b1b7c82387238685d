@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form 객체의 선택 방법</title>
+<script>
+	window.onload =function(){
+		var frm1 = document.frm1;
+		var frm2 = document.frm2;
+		//id 같은경우는 getElementbyId 를 사용하지 않고 바로 붙여 사용할수 있다.
+		console.log(frm1.search.placeholder);
+	}
+</script>
+</head>
+<body>
+	<form action="#" name = "frm1">
+		<input type="search" name ="search" placeholder="검색어 입력">
+		<input type="submit" value ="확인">
+	</form>
+	<form action="#" name = "frm1">
+		<input type="text" name ="subject" placeholder="과목 입력">
+		<input type="password" name ="credit" placeholder="학점 입력">
+		<input type="submit" value ="확인">
+	</form>
+</body>
+</html>

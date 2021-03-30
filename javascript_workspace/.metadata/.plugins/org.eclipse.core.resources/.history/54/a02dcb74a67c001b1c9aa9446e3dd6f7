@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+function main(){
+	let curTime = new Date();
+	
+	setTimeView();
+	setTimeDateView(curTime);
+	setCalendarYearManth(curTime);
+	setCalendarDate(curTime);
+	setMoveBtn();
+	setTimeWindowMinibumBtn();
+	setCalendarWindowMinimumBtn();
+}
+function setTImeWindowMinimumBtn(){
+	let timeWindowCtlBtn= document.getElementById('timeWindowCtlBtn');
+	timeWindowCtlBtn.addEventListener('click',() => {
+		let timeWindowCtlBtn = document.getElementById('timeWindowCtlBtn');
+		let timeMain=document.getElementById('timeMain');
+		let timeView=document.getElementById('timeView');
+		let timeDateView = document.getElementById('timeDateView');
+		
+		if(timeWindowCtlBtn.innerText == '▽'){
+			timeMain.setAttribute('class','minimum');
+			timeView.setAttribute('class','minimum');
+			timeDateView.setAttribute('class',minimum);
+			
+			timeWindowCtlBtn.innerHTML='□';
+		}else{
+			timeMain.removeAttribute('class');
+			timeview.removeAttribute('calss');
+			timeDateView.removeAttribute('class');
+			
+			timeWindowCtlBtn.innerHTML='▽';
+			}
+	});
+}
+function setMoveBtn(){
+	let claendarBeforeBtn = document.getElementById('calendarBeforeBtn');
+}

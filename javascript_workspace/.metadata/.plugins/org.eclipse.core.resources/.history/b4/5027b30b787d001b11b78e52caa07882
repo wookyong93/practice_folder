@@ -1,0 +1,75 @@
+@charset "UTF-8";
+#listPage{	
+	border: 10px solid lightblue;
+	position:absolute;
+	width: 630px;
+	height: 450px;
+	top:50%;
+	margin-top: -225px;
+	left:50%;
+	margin-left: -315px;
+	text-align: cneter;
+}
+#logo {
+	width: 100%; 
+	margin-bottom:50px;
+	font-size: 20px;
+	font-weight: bold;
+	padding :5px;
+} 
+#logo > img{
+	width: 150px;	
+	text-align: left;
+	margin : 5px 20px 0px 5px;
+}
+#logo > button{
+	width: 100px;
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	padding : 5px;
+}
+#mypage{
+	margin-left: 15px;
+}
+#search{
+	text-align: center;
+	margin-bottom:30px;
+}
+#search input[type='text']{
+	width: 50%;
+	padding: 5px;
+	text-align: right; 
+}
+#search > label{
+ font-size: 20px;
+ padding : 10px;
+}
+#search input[type='button']{
+	width: 100px;
+	padding: 5px;
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	margin : 5px;
+}
+#txt {
+	text-align: left;
+	font-size: 16px;
+	margin: 5px; 
+	border-bottom : 1px solid lightblue;
+}
+#songlist{
+	text-align: center;
+	font-size : 15px; 
+}
+#songlist > table{
+	width: 500px;
+	margin: 5px;
+}
+#num {
+	width: 50px;
+}
+#songName{
+	width: 300px;
+}

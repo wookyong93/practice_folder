@@ -1,0 +1,75 @@
+@charset "UTF-8";
+#mainPage{	
+	border: 10px solid lightblue;
+	position:absolute;
+	width: 630px;
+	height: 450px;
+	top:50%;
+	margin-top: -225px;
+	left:50%;
+	margin-left: -315px;
+	text-align: cneter; 
+}
+#logo {
+	width: 100%; 
+	margin-bottom:50px;
+	font-size: 20px;
+	font-weight: bold;
+	padding :5px;
+} 
+#logo > img{
+	width: 150px;	
+	text-align: left;
+	margin : 5px 20px 0px 5px;
+}
+#logo > button{
+	width: 100px;
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	padding : 5px;
+}
+#mypage{
+	margin-left: 15px;
+}
+#search{
+	text-align: center;
+	margin-bottom:30px;
+}
+#search input[type='text']{
+	width: 50%;
+	padding: 5px;
+	text-align: right; 
+}
+#search > label{
+ font-size: 20px;
+ padding : 10px;
+}
+#search input[type='button']{
+	width: 100px;
+	padding: 5px;
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	margin : 5px;
+}
+#txt {
+	text-align: center;
+	font-size: 24px;
+	border-bottom : 1px solid lightblue;
+}
+#select{
+	margin-top:50px; 
+	width: 100%;
+	text-align: center;
+}
+#select > input[type='button']{
+	background-color: lightgreen;
+	color:white;
+	border: none;
+	font-size: 15px;
+	padding : 5px;
+	width: 100px;
+	margin:5px;
+ 
+}

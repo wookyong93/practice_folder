@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 12</title>
+<script>
+   // 암호 입력 받기
+   // 암호 형태는 대소문자, 숫자, 기호(_-) 형태
+   
+   // 이메일과 암호 형태가 둘다 맞으면 페이지나 콘솔에 출력
+   // 이메일 형식이 틀리면 이메일 형식 틀리다고 경고창에 출력
+   // 암호 형식이 틀리면 암호 형식 틀리다고 경고창에 출력
+   // 둘다 틀리면 이메일과 암호 형식이 틀림 경고창에 출력
+   // 암호는 10자리 이상 20자리 이하
+   
+   emailReg = /^[a-z0-9_-]+@naver\.com$/
+   
+   function check_email(email){
+      if(emailReg.test(email)){
+         return true;
+      } else {
+         return false;
+      }
+   }
+   
+   function input_email(){
+      var email = prompt('이메일 입력');
+      if (check_email(email)){
+         return email;
+      } else {
+         alert('이메일 형식이 다릅니다 다시 입력 하세요');
+         return 'false';
+      }
+   }
+
+   
+   passReg = /^[A-Za-z0-9_-]{10,20}$/;
+   
+   function input_password(){
+      var password = prompt('암호 입력');
+      if (check_password(password)){
+         return password;
+      } else {
+         alert('암호 형식이 다릅니다 다시 입력하세요');
+         return 'false';
+      }
+   }
+   
+   function check_password (password){
+      if(passReg.test(password)){
+         return true;
+      } else {
+         return false;
+      }
+   }
+   
+   var email;
+   while(true){
+      email = input_email();
+      if (email != 'false' && email != null){
+         break;
+      }
+   }
+   var password;
+   while(true){
+      password = input_password();
+      if (password != null && password != 'false'){
+         break;
+      }
+   }
+   
+   console.log(email);
+   console.log(password);
+</script>
+</head>
+<body>
+
+</body>
+</html>

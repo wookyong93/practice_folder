@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>a
+   function btnClick(){
+      var id = document.getElementById('id').value;
+      alert(id);
+   }
+</script>
+</head>
+<body>
+   <form action="#" onsubmit="btnClick()">
+      <input type="text" name="id" id="id">
+      <input type="submit" value="확인" id="btn">
+   </form>
+</body>
+</html>

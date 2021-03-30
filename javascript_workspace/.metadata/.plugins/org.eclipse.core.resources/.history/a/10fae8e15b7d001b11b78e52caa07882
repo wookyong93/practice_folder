@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@charset "UTF-8";
+#indexPage {
+   border: 20px solid lightblue;
+   position:absolute;
+   width:500px;
+   height:400px;
+   left:50%;
+   margin-left:-250px;
+   top:50%;   
+   margin-top:-200px;
+   text-align:center;
+}
+#logo{
+   text-align:left;
+}
+#login {
+   margin:auto;
+   width: 400px;
+   text-align: left;
+   padding:10px 0px;
+}
+img {
+   margin:10px 0px 0px 10px;
+   width:100px;
+}
+#login > label{
+   font-size: 20px;
+   text-align: left;
+}
+.empty {
+	margin-top: 10px;
+}
+.empty > input[type='button']{
+   margin-left:10px;
+   font-size: 15px;
+   padding:3px;
+}
+.empty > input[type='text'],input[type='password'] {
+   width:200px;
+   height: 25px;
+}
+label {
+   display: inline-block;
+   text-align:left;
+   width:100px;
+}
+button{
+   width:80px;
+   height:35px;
+   background-color:gray;
+   border:none;
+   color:white;
+}

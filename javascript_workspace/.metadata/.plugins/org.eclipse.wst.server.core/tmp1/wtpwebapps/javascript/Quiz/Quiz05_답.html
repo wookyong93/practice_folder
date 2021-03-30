@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function pass1(){
+		var num =Number(prompt("점수 입력"));
+		if(num >=60){
+			return "합격입니다";
+		}
+		else{
+			return "불합격입니다.";
+		}
+	}
+	
+	function gugudan(){
+		var dan = Number(prompt('단 입력'));
+		var gu='';
+		
+		for(var i =1 ; i<10;i++){
+			gu += dan+"X"+i+"="+(dan*i)+"<br>";
+		}
+		return gu;	
+	}
+	function oper(){
+		var num1 = Number(prompt('첫번째 정수 입력'));
+		var num2 = Number(prompt('두번째 정수 입력'));
+		var o = '';
+		o += num1 +" + " +num2 +" = " +(num1+num2)+"<br>";
+		o += num1 +" - " +num2 +" = " +(num1-num2)+"<br>";
+		o += num1 +" * " +num2 +" = " +(num1*num2)+"<br>";
+		o += num1 +" / " +num2 +" = " +(num1/num2)+"<br>";
+		
+		return o;
+	}
+	var menu = Number(prompt('1. 합격여부 2.구구단 3.사칙연산'));
+	var str='';
+	if(menu ==1){
+		str = pass1();
+	}else if(menu == 2 ){
+		str =gugudan();
+	}else if(menu == 3){
+		str =oper();
+	}else{
+		alert("없는 메뉴 입니다.");
+		location.reload();
+	}
+	document.write(str);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

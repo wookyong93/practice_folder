@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UP & DOWN</title>
+<script>
+	var ran =[];
+	for(var i =1 ; i<=100;i++){
+		ran.push(i);
+	}
+	num =0 ;
+	num = Math.floor(Math.random()*ran.length+1);
+	console.log(ran[num]);
+	for(var j=0;j<10;j++){
+	answer  = Number(prompt('UP & Down 게임 [1~100] 숫자입력 '));
+		if(j>9){
+			document.write('패배! <br> 답 : '+ran[num]);	
+				if(answer == ran[num]){
+					document.write('승리!<br>답 : '+ran[num]);
+					break;
+				}else if(answer < ran[num]){
+					alert('UP!');
+				}else if(answer > ran[num]){
+					alert('Down!');
+				}
+		}
+	}
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

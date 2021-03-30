@@ -1,0 +1,23 @@
+﻿<!-- 생략 -->
+<style>
+body {
+    font-family: "맑은 고딕", "돋움";
+    font-size: 12px;
+    color: #444444; }
+ul {
+    ___________________:none; }
+#gallery_box {
+    width:749px;
+    height:195px;
+    margin:10px 0 0 5px;
+    border:solid 1px #cccccc;
+    _____________________:10px;
+    _____________________:2px 2px 5px #dddddd;
+    padding:20px 0 0 10px; }
+.items {
+    float:left;
+    _________________________ :center; }
+.items li {
+    margin-top:3px; }
+</style>
+<!-- 생략 -->

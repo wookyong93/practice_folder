@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 15</title>
+<script>
+ function createEle(){
+	 var bt = document.getElementById('bt');
+	 function popup(){
+		var ol = document.createElement('ol');
+		var a = document.createElement('a');
+		var li = document.createElement('li');
+	 	var txt1 = document.createTextNode('구글');
+	 	var txt2 = document.createTextNode('다음');
+	 	var txt3 = document.createTextNode('네이버');
+	 	
+	 	
+	 	a.appendChild(txt1);
+		a.setAttribute('href','https://www.google.com');
+		a.setAttribute('target','_blank');
+		a.setAttribute('title','구글로 이동');
+	 	li.appendChild(a);
+	 	
+	 	a.appendChild(txt2);
+		a.setAttribute('href','https://www.daum.net');
+		a.setAttribute('target','_blank');
+		a.setAttribute('title','다음으로 이동');
+	 	li.appendChild(a);
+	 	
+	 	ol.appendChild(li);
+	 	document.body.appendChild(ol);
+	 }
+	 bt.onclick = popup;
+ }
+ addEventListener('load',createEle);
+</script>
+</head>
+<body>
+	<button id = 'bt'>요소 생성</button>
+</body>
+</html>

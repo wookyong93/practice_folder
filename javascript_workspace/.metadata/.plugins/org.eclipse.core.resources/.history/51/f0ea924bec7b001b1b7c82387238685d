@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bucket List</title>
+<style>
+	div{
+		text-align: center;
+	}
+	#mainDiv{
+		width:30%;
+	}
+</style>
+</head>
+<body>
+		<div id = 'mainDiv'>
+			<h1 id = 'title'>Bucket List</h1>
+			<hr><!-- 밑줄 -->
+			<button id ='addBtn'>목록 추가</button>
+			<ul id = 'lst'>
+				<li>세계일주</li>
+				<li>달착륙</li>
+				<li>태양 근거리 실사</li>
+			</ul>
+		</div>
+
+</body>
+</html>

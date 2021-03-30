@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ex05.Child&apos; to &apos;Child1&apos;&#x0D;&#x0A;- Original project: &apos;ex08&apos;&#x0D;&#x0A;- Original element: &apos;ex05.Child&apos;&#x0D;&#x0A;- Renamed element: &apos;ex05.Child1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Child&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ex05{Child.java[Child" matchStrategy="1" name="Child1" qualified="false" references="true" similarDeclarations="false" stamp="1610942931419" textual="false" version="1.0"/>
+</session>

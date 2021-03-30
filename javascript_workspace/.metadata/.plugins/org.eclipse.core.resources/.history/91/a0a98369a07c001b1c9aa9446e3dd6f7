@@ -1,0 +1,17 @@
+@charset "UTF-8";
+*{margin:0px;}
+body{
+	padding :20px;
+}
+#timeMain{
+	background : #555;
+	border : #fff 1px solid;
+	width : 400px;
+	height:100px;
+	
+	position : absolute;
+	left:50%;
+	margin-left:-300px;
+	top:50%;
+	margin-top: -200px;
+}

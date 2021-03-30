@@ -1,0 +1,9 @@
+package ex05;
+
+public class Student {
+	int classNum=1;
+	
+	Student(){
+		classNum+=1;
+	}
+}

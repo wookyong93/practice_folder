@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 10</title>
+<script>
+	var lotto=[];
+	var num = 0;
+	for(var i = 1 ; i<=45;i++){
+		lotto.push(i);
+	}
+	console.log(lotto.toString);
+</script>
+</head>
+<body>
+
+</body>
+</html>

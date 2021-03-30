@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UP & DOWN</title>
+<script>
+	
+	var num = Math.floor(Math.random()*ran.length*100)+1;
+	
+	for(var j=0;j<10;j++){
+	answer  = Number(prompt('UP & Down 게임 [1~100] 숫자입력 '));
+		if(j>=9){
+			document.write('패배!<br>답 : '+num);	
+		}else{
+			if(answer == num){
+				document.write('승리!<br>답 : '+num);
+				break;
+			}else if(answer < num){
+				alert('UP! 입력횟수 : '+(j+1));
+			}else if(answer > num){
+				alert('Down! 입력 횟수: '+(j+1));
+			}
+		}
+	}
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

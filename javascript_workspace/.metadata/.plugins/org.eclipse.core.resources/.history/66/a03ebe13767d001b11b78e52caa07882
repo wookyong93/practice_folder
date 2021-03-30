@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>음악 스트리밍 시스템</title>
+<link rel="stylesheet" type="text/css" href="css/balladeInfo.css">
+<script type="text/javascript" src = "js/balladeInfo.js"></script>
+</head>
+<body>
+<div id ='mainPage'>
+	<div id="logo">
+		<img src='img/melon.jpg'> 음악 스트리밍 시스템 <button id='mypage' onclick ='mypage()'>내정보</button> <button id='logout' onclick = 'logout()'>로그아웃</button>
+	</div>
+	<div id ='search'>
+		<label>검 색</label><input type='text' id ='searchTxt'> <input type='button' id='searchBtn' value ='검색' onclick = 'search()'>
+	</div>
+	<div id ='txt'>장 르 선 택</div>
+	<div id ='songList'>
+		
+	</div>
+</div>
+</body>
+</html>

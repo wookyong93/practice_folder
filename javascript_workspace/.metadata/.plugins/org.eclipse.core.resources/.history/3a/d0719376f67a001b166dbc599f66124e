@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math 객체</title>
+<script>
+	var lucky = [];
+	var num = 0;
+	for(var i = 1; i<=100;i++){
+		lucky.push(i);
+		//1~100
+	}
+	num = Math.floor(Math.random()*lucky.length);
+	//0~99
+	conole.log(num);
+</script>
+</head>
+<body>
+
+</body>
+</html>

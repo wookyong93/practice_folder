@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function dateTest(){
+		setInterval(function(){
+			document.getElementById('clock').innerHTML = new Date();
+			//id 가 clock 곳에 HTML로 new Date()로 현재 시간을 추가한다.
+			location.reload();
+		},1000);
+		//1초에 한번씩 새로고침하여 시간을 출력
+	}
+</script>
+</head>
+<body>
+	<div id = 'clock'></div>
+	<script>
+		dateTest();
+	</script>
+</body>
+</html>

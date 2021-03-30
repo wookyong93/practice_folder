@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 8번</title>
+<script>
+	var score={
+			kor: '',
+			eng: '',
+			math: '',
+			sum: function(){
+				return this.kor+this.eng+this.math;
+			},
+			avg: function(){
+				return this.sum()/3;
+			},
+			output:function(){
+				return "총점"+this.sum() + "평균"+this.avg();
+			}
+	}
+	score.kor=Number(prompt('국어 점수'));
+	score.eng=Number(prompt('영어 점수'));
+	score.math=Number(prompt('수학 점수'));
+	document.write(score.output());
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

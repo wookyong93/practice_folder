@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내장함수</title>
+<script type="text/javascript">
+	//인코딩, 디코딩 함수
+	var encodeStr ="자바스크립트";
+	console.log(encodeURIComponent(encodeStr));
+	var decodeStr = encodeURIComponent(encodeStr);
+	console.log(decodeURIComponent(decodeStr));
+	var str='%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8';
+	console.log(decodeURIComponent(str));
+	//숫자
+	var num1 = 1000;
+	//var num1 = '숫자';
+	if(!isNaN(num1)){
+		console.log(num1+'숫자입니다.');
+	}else{
+		console.log(num1+'숫자가아닙니다.');
+	}
+	//유한 무한 값 판별 함수
+	//var num2 =1/0;
+	var num2 = 10/2;
+	if(isFinite(num2)){
+		console.log("유한값");
+	}else{
+		console.log("무한값");
+	}
+	
+	//숫자, 문자 변환 함수
+	var num3 = '10';
+	console.log(Number(num3));
+	var num4 ='100px';
+	console.log(parseInt(num4));
+	var num5 = '33.3%';
+	console.log(parseFloat(num5));
+	var num6 =10;
+	console.log(typeof num6);
+	console.log(typeof String(num6));
+	console.log(typeof num6);
+	num6 = typeof String(num6);
+	console.log(typeof num6);
+	var str1 = 'var num7 =10';
+	var str2 = 'var num8 =20';
+	eval(str1); // var num7 = 10;
+	eval(str2); //var num8 = 20;
+	//eval : 문자열을 코드로 인식하게 하는 함수
+	console.log(num7+num8);
+	
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>

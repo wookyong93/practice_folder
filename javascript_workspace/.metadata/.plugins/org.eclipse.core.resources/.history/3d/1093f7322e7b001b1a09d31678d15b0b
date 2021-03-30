@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제13</title>
+<script type="text/javascript">
+		onclick = function(){
+		var i = 0;
+		var increase = setInterval(function(){
+			i++;
+			alert(i);
+		},2000);
+		onclick=function(){
+			clearInterval(increase);
+		}
+	}
+</script>
+</head>
+<body>
+	<button id = 'bt'> 버튼 </button>
+</body>
+</html>

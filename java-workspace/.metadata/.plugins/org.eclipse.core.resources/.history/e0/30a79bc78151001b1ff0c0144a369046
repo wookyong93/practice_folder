@@ -1,0 +1,17 @@
+package ex05;
+
+public class StudentExam {
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		
+		System.out.println(s1.classNum);
+		
+		Student s2 = new Student();
+		
+		System.out.println(s2.classNum);
+		
+		Student s3 = new Student();
+		
+		System.out.println(s3.classNum);
+	}
+}

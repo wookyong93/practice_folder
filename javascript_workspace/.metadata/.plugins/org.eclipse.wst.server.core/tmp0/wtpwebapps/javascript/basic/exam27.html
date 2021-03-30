@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>매개 변수</title>
+<script>
+	function examPass(name,h,c,j) {
+		var comment = name +"학생은 ";
+		if( h >= 50 && c>=60 && j>=60){
+			comment +='전 과목 PASS 입니다.';
+		}else{
+			if(h<60){
+				comment +='HTML 재시험';
+			}else if(c<60){
+				comment += 'css 재시험';
+			}else if (j<60){
+				commnet += 'javascript 재시험';
+			}
+		}
+		return comment;
+	}
+	console.log(examPass('이자바',80,90,90));
+	console.log(examPass('김스크',80,50,90));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

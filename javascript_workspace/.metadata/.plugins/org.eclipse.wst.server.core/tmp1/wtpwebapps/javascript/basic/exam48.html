@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>요소를 직접 선택하는 메서드</title>
+<script>
+	window.onload = function(){
+		var list1 = document.querySelector('#box1>ul>li')
+		var list2 = document.querySelectorAll('#box1>ul>li')
+		var list3 = document.querySelector('#box1');
+		var list4 = document.querySelector('#box2');
+		console.log(list1);
+		console.log(list2);
+		list1.style.background="#FF6600";
+		list2[0].style.background="#FFFF00";
+		list2[1].style.background="#FF00FF";
+		list2.item(2).style.background="#DDD";
+		list3.style.background="#333";
+		list4.style.background="#555";
+		list4.style.color="#FFF";
+		
+	}
+</script>
+</head>
+<body>
+	<div id='box1'>
+		<ul>
+			<li>내용1</li>
+			<li>내용2</li>
+			<li>내용3</li>
+		</ul>
+	</div>
+	<div id='box2'>
+		<ul>
+			<li>내용1</li>
+			<li>내용2</li>
+			<li>내용3</li>
+		</ul>
+	</div>
+</body>
+</html>

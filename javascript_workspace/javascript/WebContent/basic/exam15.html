@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>if문</title>
+<script>
+	var age = prompt("나이 입력 ","나이를 입력 해주세요");
+	console.log(age);
+	
+	var pay = "";
+	if(age <13 || age >=65){
+		pay = "2,000원 입니다. ";
+	}else if(age >=13 && age <65){
+		pay = "4,000원 입니다.";
+	}else{
+		pay = "나이를 숫자로 입력해주세요";
+	}
+	document.write(pay);
+</script>
+</head>
+<body>
+
+</body>
+</html>

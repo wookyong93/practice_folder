@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+<script>
+	
+	function calc1() {
+		var num1 = 0;
+		var num2 = 0;
+		var calc = '';
+		var msg='';
+		
+		calc =prompt('계산기 : + , - , * , / 입력')
+		if(calc == '+' || calc == '-' || calc == '*' || calc=="/"){
+		num1 =Number(prompt('첫번째 정수 입력'))
+		num2 =Number(prompt('두번째 정수 입력')) 
+			if(calc =='+'){
+				msg = num1+' + '+num2+' = ' +(num1+num2);
+			}else if(calc =='-'){
+				msg = num1+' - '+num2+' = ' +(num1-num2);
+			}else if(calc =='*'){
+				msg = num1+' * '+num2+' = ' +(num1*num2);
+			}else if(calc =='/'){
+				msg = num1+' / '+num2+' = ' +(num1/num2);
+			}
+		}else{
+			alert('기호를 다시입력해주세요!!!');
+			location.reload();
+		}
+		document.write(msg);
+	}
+	
+	calc1();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

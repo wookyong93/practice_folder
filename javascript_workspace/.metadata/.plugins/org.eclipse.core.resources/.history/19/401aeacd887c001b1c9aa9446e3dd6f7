@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+<style>
+   div {
+      margin:auto;
+      width:320px;
+      text-align:center;
+   }
+   table {
+      background:rgb(239,252,216);
+   }
+   th {
+      height:80px;
+      padding: 0px 10px;
+   }
+   th > input {
+      width:100%;
+      border:none;
+      text-align:right;
+      font-size:48px;
+   }
+   td > input[type='button']{
+      width:100%;
+      height:60px;
+      color:rgb(21,189,255);
+      background:rgb(208,252,179);
+      font-size:36px;
+      border:none;
+   }
+   td > input[type='button']:hover{
+      background:rgb(176,216,151);
+   }
+   td > input[type='button']:active {
+      background:rgb(94,160,53);
+   }
+</style>
+<script>
+   function calc(){
+      let inputLst = document.getElementsByTagName('input');
+      document.getElementById('result').value = 0;
+      for (let i=0;i<inputLst.length;i++){
+         inputLst[i].addEventListener('click', btnAction);
+      }
+   }
+   function btnAction(){
+      let result = document.getElementById('result');
+      if(result.value == '0'){
+         result.value = '';
+      }
+      
+      if(this.value == 'c') {
+         result.value = '0';
+      } else if (this.value == '<'){
+         result.value = result.value.substr(0, result.value.length-1);
+         
+         if (result.value.length == 0){
+            result.value = '0';
+         }
+      } else if (this.value == '='){
+         var ch = result.value.substr(result.value.length-1,result.value.length);
+         console.log(ch);
+         if (isNaN(ch)) {
+            result.value = result.value.substr(0, result.value.length-1);
+            
+         }
+         result.value = eval(result.value);
+         
+      }else {
+    	  if(result.value.length != 0 && !isNaN(result.value)){
+    		  result.value ='';
+    	  }
+         result.value += this.value;
+      }
+   }
+</script>
+</head>
+<body>
+   <div>
+      <table>
+         <tr>
+            <th colspan=4>
+               <input type="text" id="result" value="0">
+            </th>
+         </tr>
+         <tr>
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9"></td>
+            <td><input type="button" value="+"></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+            <td><input type="button" value="-"></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="1"></td>
+            <td><input type="button" value="2"></td>
+            <td><input type="button" value="3"></td>
+            <td><input type="button" value="*"></td>
+         </tr>
+         <tr>
+            <td colspan=2><input type="button" value="0"></td>
+            <td><input type="button" value="%"></td>
+            <td><input type="button" value="/"></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="c"></td>
+            <td><input type="button" value="<"></td>
+            <td colspan=2><input type="button" value="="></td>
+         </tr>
+      </table>
+   </div>
+   <script>
+      calc();
+   </script>
+</body>
+</html>

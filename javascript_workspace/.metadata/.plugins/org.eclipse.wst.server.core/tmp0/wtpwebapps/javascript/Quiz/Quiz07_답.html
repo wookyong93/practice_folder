@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 7</title>
+<script>
+	function num_input(str) {
+		var num1 =Number(prompt(str+"정수 입력 : "));
+		if(isNaN(num1)){
+			alert('정수아님');
+			num1 = num_input(str);
+		}else{
+			return num1;
+		}
+	}
+	var num1 = num_input('첫번째');
+	var num2 = num_input('두번째');
+	document.write('두개의 합:'+(num1+num2));
+	
+	var num3 = num_input("첫번째");
+	var num4 = num_input("두번째");
+	var result=num3/num4;
+	if(isFinite(result)){
+		document.write('무한값 : '+result);
+	}else{
+		document.write("유한값 : "+result);
+	}
+	var str1='var num5=';
+	var str2='var num6=';
+	str1 += prompt('첫번째 정수 입력:');
+	str2 += prompt('첫번째 정수 입력:');
+	eval(str1);
+	eval(str2);
+	document.write(num5+num6);
+</script>
+</head>
+<body>
+
+</body>
+</html>

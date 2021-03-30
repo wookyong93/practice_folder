@@ -1,0 +1,6 @@
+@charset "UTF-8";
+#indexPage{
+	position:absolute;
+	left:50%;
+	top:50%;
+}

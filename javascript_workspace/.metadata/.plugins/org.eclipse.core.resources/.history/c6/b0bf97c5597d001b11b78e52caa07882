@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/join.css">
+<script type="text/javascript" src="js/join.js"></script>
+</head>
+<body>
+   <div id="indexPage">
+      <div id="logo">
+         <img src='img/melon.jpg'>
+      </div>
+      <div id="title">
+         <h2>음악스트리밍 시스템</h2>
+      </div>
+      <div id="login">
+         <label>아 이 디</label>&nbsp;
+         <input type="text" name="id" id="id">
+         <input type="button" value="중복확인">
+         <br>
+         <label>패스워드</label>
+         <input type="password" name="pwd" id="pwd1">
+         <br>
+         <label>패스워드확인</label>
+         <input type="password" name="pwd" id="pwd2">
+         <label id="check"></label>
+      </div>
+      <div id="btn">
+         <button type="button" onclick="join()">가입</button>
+         <button type="button" onclick="cancel()">취소</button>
+      </div>
+   </div>
+</body>
+</html>

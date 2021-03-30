@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 12</title>
+<script>
+	var emailReg = /^[A-Za-z0-9_-]+@[A-Za-z0-9!#$%^&*_-]+(\.[A-Za-z0-9!#$%^&*-_]+){1,2}$/;
+	var passReg = /^[A-Za-z0-9_-]{10,20}/;
+		
+	email1=prompt('이메일 주소를 입력하세요 ');
+	
+	if(emailReg.test(email1)){
+		pass1 = prompt('암호를 입력하세요')
+		if(passReg.test(pass1)){
+			document.write(email1+'<br>')
+			document.write(pass1+'<br>')
+		}else{
+			alert('잘못된 암호 형식입니다.')
+			location.reload();
+		}
+		
+	}else{
+		alert('잘못된 이메일 형식입니다.')
+		location.reload();
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

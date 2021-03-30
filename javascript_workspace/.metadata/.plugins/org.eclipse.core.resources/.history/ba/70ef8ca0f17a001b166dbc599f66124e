@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제9</title>
+<script>
+	class Student{
+		name;
+		age;
+		address;
+		set setName(name){
+			this.name = prompt('이름 입력 ');
+		}
+		set setAge(age){
+			this.age = prompt('나이 입력 ');
+		}
+		set setAddress(address){
+			this.address = prompt('주소 입력 ');
+		}
+		outPut(){
+			return '이름 : '+this.name + '나이 : '+this.age + '주소 : '+this.address+'<br>';
+		}
+		
+	}
+
+	var stu1 = new Student();
+	var stu2 = new Student();
+	var stu3 = new Student();
+	stu1.setName();
+	stu1.setAge();
+	stu1.setAddress();
+	document.wrtie(stu1.outPut());
+</script>
+</head>
+<body>
+
+</body>
+</html>

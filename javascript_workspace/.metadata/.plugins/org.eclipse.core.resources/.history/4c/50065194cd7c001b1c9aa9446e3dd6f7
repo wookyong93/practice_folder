@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+	width: 480px;
+	margin : auto;
+
+}
+ h1 {
+ 	width:100%;
+ 	text-align: center;
+ 	font-size : 32px;
+ 	padding : 10px 0 10px 0 ;
+ 	border-bottom: 3px solid #0000ff;
+ }
+ div #state{
+ 	font-size : 18px;
+ 	text-align:center;
+ 	padding : 0px 5px 5px 5px;
+ 	background-color: #cccccc;
+ }
+ span{
+ 	font-style: italic;
+ 	color: red;
+ 	font-weight: bold;
+ 	padding : 0 5px 0 5px;
+ }
+ #val1{
+ 	width: 50%;
+ 	text-align: center;
+ 	padding : 5px;
+ }
+ #insert {
+ 	width:120px;
+ 	text-align: center;
+ 	font-size: 15px;
+ 	padding : 5px;
+ }
+ label{
+ 	font-weight: bold;
+ }
+</style>
+<script>
+	var number = Math.floor(Math.random()*100)+1;
+	var userCount = 1;
+	
+	function main(){
+		var val1 = document.querySelector('#val1')
+		var warning=document.querySelector('#warning');
+		var upordown=document.querySelector('#upordown');
+		var submit = document.querySelector('#insert');
+		var answer = document.querySelector('#answer');
+		var resetBtn;
+		
+		insert.addEventListener('click',answerCheck);
+		function answerCheck(){
+			var userAnswer = Number(val1.value);
+			if(userCount ==1){
+				answer.textContent ='입력하신 값은 : ';
+			}
+			answer.textContent += userAnswer+'';
+			if(userAnswer == number){
+				warning.textContent = "승리! 정답 : "+number;
+				warning.style.backgroundColor ='green';
+				upordown.textContent='  ';
+			}else if(userCount ==10){
+				warning.textContent = "패배! 정답 : "+number;
+				warning.style.backgroundColor= 'red';
+			}else{
+				warning.textContent='잔여 횟수 :'+userCount;
+				warning.style.backgroundColor='orange';
+				if(userAnswer > number){
+					upordown.textContent='DOWN!!!';
+				}else if(userAnswer<number){
+					upordown.textContent='UP!!!';
+				}
+			}
+			userCount++;
+			val1.value = '';
+		}
+		function gameOver(){
+			resetBtn=document.createElement('button');
+			resetBtn.textContent='새로운 게임 시작';
+			document.body.appendChild(resetBtn);
+			resetBtn.addEventListener('click',reset);
+		}
+		function reset(){
+			userCount = 1;
+			var result = document.querySelectorAll('#result p');
+			for(var i =0; i<result.length;i++){
+				result[i].textContent ='';
+			}
+			resetbtn.parentNode.removeChild(resetBtn);
+			val1.value = '';
+			val1.focus();
+			warning.style.background = 'white';
+			number = Math.floor(Math.random()*100)+1;
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<h1 >UP & Down Game</h1>
+	<div id ='state'>
+		<p>1~100 자리 의 정수 중 임의의 수를 맞추는 게임이다.<br>
+		총 10회의 기회가 있으며 맞으면 게임이 종료 입력한 숫자보다 
+		임의의 수가 크면<span> UP </span> 작으면 <span>Down</span>이 출력된다.</p>
+	</div>
+	<form action="#" name='frm'>
+		<label>숫자 입력</label>
+		<input type='text' id='val1'>
+		<!-- id = # class = . -->
+		<input type='submit' id = 'insert' value='입력'>
+	</form>
+	<div id='result'>
+		<p id='answer'></p>
+		<p id='warning'></p>
+		<p id='upordown'></p>
+	</div>
+	<script>
+	main();
+	</script>
+</body>
+</html>

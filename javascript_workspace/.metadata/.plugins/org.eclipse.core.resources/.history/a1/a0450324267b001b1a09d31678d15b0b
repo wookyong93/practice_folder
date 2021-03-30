@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트 속성</title>
+<style>
+	div{
+	height: 100px;
+	background-color: #718c00;
+	margin-top : 20px;
+	color : #fff; 
+	}
+</style>
+<script>
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

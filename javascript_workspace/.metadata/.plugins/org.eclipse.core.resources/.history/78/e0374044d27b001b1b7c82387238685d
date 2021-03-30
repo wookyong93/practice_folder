@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 15</title>
+<script>
+ function createEle(){
+	 var bt = document.getElementById('bt');
+	 function popup(){
+		var ol = document.createElement('ol');
+		var a = document.createElement('a');
+		var li = document.createElement('li');
+	 	var txt1 = document.createTextNode('구글');
+	 	var txt2 = document.createTextNode('다음');
+	 	var txt2 = document.createTextNode('네이버');
+	 }
+	 bt.onclick = popup;
+ }
+ addEventListener('load',createEle);
+</script>
+</head>
+<body>
+	<button id = 'bt'>요소 생성</button>
+</body>
+</html>

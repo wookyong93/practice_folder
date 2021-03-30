@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>클로져</title>
+<script>
+	function multi(n){
+		return function(){
+			return n*=n;
+		}
+	}
+	var num1 = multi(10);
+	console.log(num1());
+	console.log(num1());
+	var num2 = multi(20);
+	console.log(num2());
+	console.log(num2());
+	
+	function getClosure(num){
+		var text = 'variable 1';
+		return function(){
+			return text;
+		}
+	}
+	var closure = getClosure();
+	console.log(closure());
+	console.log(closure());
+	
+	var base = 'hello';
+	function sayHello(name) {
+		var txt = base + name;
+		return function () {
+			 		console.log(txt);
+		}
+	}
+	var name1 = sayHello('아이린');
+	var name2 = sayHello('예린');
+	var name3 = sayHello('정국');
+	
+	name1();
+	name2();
+	name3();
+	
+	function Hello(name) {
+		 this._name =name;
+	}
+	Hello.prototype.say = function(){
+		console.log('Hello'+this._name);
+	}
+	var name1 = new Hello('아이린');
+	var name2 = new Hello('예린');
+	var name3 = new Hello('정국');
+	
+	name1.say();
+	name2.say();
+	name3.say();
+	name1._name ='anonymous';
+	name1.say();
+</script>
+</head>
+<body>
+
+</body>
+</html>

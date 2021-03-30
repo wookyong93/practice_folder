@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>즉시 실행 함수</title>
+<script>
+	(function () {
+		life();
+	})();
+	function life() {
+		console.log('즉시 실행 함수 1');
+	}
+	var instant = (function () {
+		console.log('즉시 실행 함수 2');
+	})();
+	//변수안에 즉시 실행 함수는 재호출이 되지 않는다.
+	//instant();
+	
+	//즉시 실행 함수의 매개값을 사용 할 수 있다.
+	(function(x){
+		console.log(x*x);
+	})(2);
+	
+	//즉시 실행 함수의 이름을 지정하면 재호출이 가능하다.
+	(func = function(x) {
+		console.log(x*x);
+	})(3);
+	func(4);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

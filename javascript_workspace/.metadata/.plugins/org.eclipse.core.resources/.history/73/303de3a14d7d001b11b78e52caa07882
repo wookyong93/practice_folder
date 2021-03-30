@@ -1,0 +1,10 @@
+@charset "UTF-8";
+#indexPage{
+	position:absolute;
+	width:500px;
+	left:50%;
+	top:50%;
+}
+img{
+	width:100px;
+}

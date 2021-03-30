@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+prefHeight="211.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" 
+xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ex08.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="181.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="472.0" minWidth="10.0" prefWidth="472.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="ID" GridPane.halignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" prefHeight="50.0" prefWidth="350.0" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" right="30.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Password" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPw" prefHeight="50.0" prefWidth="350.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" right="30.0" />
+         </GridPane.margin>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="99.0" prefWidth="653.0" spacing="20.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" onAction="#LoginProc" prefHeight="50.0" prefWidth="130.0" text="확인">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button onAction="#CancelProc" prefHeight="50.0" prefWidth="130.0" text="취소">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="membershipBtn" mnemonicParsing="false" onAction="#OpenMembershipForm" prefHeight="50.0" prefWidth="130.0" text="회원가입">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      
+   </children>
+</GridPane>

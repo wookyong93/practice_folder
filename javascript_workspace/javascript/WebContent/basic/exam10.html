@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>대입 연산자</title>
+<style>
+	table{
+		border-collapse: collapse;
+	}
+	td{
+		border : solid 1px black;
+	}
+</style>
+<script type="text/javascript">
+	// = , += , -= , *= , /= , %=
+	var num1 = 5;
+	var num2 = 15;
+	var num3 = 5;
+	var num4 = 20;
+	var num5 = 10;
+			
+	//num1 = num1 + 10;
+	num1 += 10;
+	//num2 = num2 - 10;
+	num2 -= 10;
+	//num3 = num3 * 10;
+	num3 *= 10;
+	//num4 = num4 / 10;
+	num4 /= 10;
+	//num5 = num5 % 10;
+	num5 %= 10;
+	console.log(num1+","+num2+","+num3+","+num4+","+num5);
+	
+	//+= 를 이용해서 문자열을 연결 시킬 수 있다.
+	
+	var table = '<table>';
+	table += '<tr>';
+	table += '<td>자바스크립트</td><td>제이쿼리</td>';
+	table += '</tr>';
+	table += '</table>';
+	
+	
+	document.write(table);
+	
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>자바스크립트</td><td>제이쿼리</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+function login(){
+	var id= document.getElementById('id');
+	var pwd = document.getElementById('pwd');
+	console.log(id+','+pwd);
+}
+function endPro(){
+	window.close();
+}
+function join(){
+	alert('회원가입클릭');
+}

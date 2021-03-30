@@ -1,0 +1,64 @@
+Eeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3A3ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.goto.line" commandName="Go to Line" description="Go to a specified line of text" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3BHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.editors.quickdiff.revert" commandName="Revert Lines" description="Revert the current selection, block or deleted lines" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3BXShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.implement.occurrences" commandName="Search Implement Occurrences in File" description="Search for implement occurrences of a selected type" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3BnShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.debug.ui.javaAppletShortcut.debug" commandName="Debug Java Applet" description="Debug Java Applet" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3B3ShEeu9JMzr41TM2A" elementId="org.eclipse.wst.xml.ui.gotoMatchingTag" commandName="Matching Tag" description="Go to Matching Tag" category="_1xf4iHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3CHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.select.lineUp" commandName="Select Line Up" description="Extend the selection to the previous line of text" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3CXShEeu9JMzr41TM2A" elementId="org.eclipse.datatools.sqltools.sqleditor.saveToDatabaseAction" commandName="Save to Database" category="_1xf4t3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3CnShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.team.submodule.add" commandName="Add Submodule" category="_1xf4tnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3C3ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.cut.line.to.end" commandName="Cut to End of Line" description="Cut to the end of a line of text" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3DHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.correction.convertAnonymousToLocal.assist" commandName="Quick Assist - Convert anonymous to local class" description="Invokes quick assist and selects 'Convert anonymous to local class'" category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3DXShEeu9JMzr41TM2A" elementId="org.eclipse.compare.copyLeftToRight" commandName="Copy from Left to Right" description="Copy Current Change from Left to Right" category="_1xf4rnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3DnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.project.openProject" commandName="Open Project" description="Open a project" category="_1xf4s3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3D3ShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.history.ShowBlame" commandName="Show Revision Information" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3EHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.correction.addSuppressWarnings" commandName="Quick Fix - Add @SuppressWarnings" description="Invokes quick fix and selects 'Add @SuppressWarnings' " category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3EXShEeu9JMzr41TM2A" elementId="org.eclipse.jpt.jpa.ui.persistentAttributeAddToXml" commandName="Add Attribute to XML" category="_1xf4nHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3EnShEeu9JMzr41TM2A" elementId="org.eclipse.tips.ide.command.trim.open" commandName="Tip of the Day" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3E3ShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.search.write.access.in.project" commandName="Write Access in Project" description="Search for write references to the selected element in the enclosing project" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3FHShEeu9JMzr41TM2A" elementId="org.eclipse.eclemma.ui.selectCounters" commandName="Select Counters" category="_1xf4kXShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3FXShEeu9JMzr41TM2A" elementId="type" name="type" optional="false"/>
+  </commands>
+  <commands xmi:id="_1xf3FnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.project.properties" commandName="Properties" description="Display the properties of the selected item's project " category="_1xf4s3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3F3ShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.history.CompareVersionsInTree" commandName="Compare in Tree" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3GHShEeu9JMzr41TM2A" elementId="org.eclipse.jpt.jpa.ui.persistentTypeMapAs" commandName="Map As" category="_1xf4nHShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3GXShEeu9JMzr41TM2A" elementId="persistentTypeMappingKey" name="mapping key" optional="false"/>
+  </commands>
+  <commands xmi:id="_1xf3GnShEeu9JMzr41TM2A" elementId="org.eclipse.epp.package.common.contribute" commandName="Contribute" description="Contribute to the development and success of the Eclipse IDE!" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3G3ShEeu9JMzr41TM2A" elementId="org.eclipse.datatools.sqltools.sqleditor.DMLDialogSelectionAction" commandName="Edit in SQL Query Builder..." category="_1xf4t3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3HHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.select.columnPrevious" commandName="Select Previous Column" description="Select the previous column" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3HXShEeu9JMzr41TM2A" elementId="org.eclipse.pde.ui.junitWorkbenchShortcut.debug" commandName="Debug JUnit Plug-in Test" description="Debug JUnit Plug-in Test" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3HnShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.correction.extractLocalNotReplaceOccurrences.assist" commandName="Quick Assist - Extract local variable" description="Invokes quick assist and selects 'Extract local variable'" category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3H3ShEeu9JMzr41TM2A" elementId="org.eclipse.datatools.sqltools.sqleditor.attachProfileAction" commandName="Set Connection Information" category="_1xf4t3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3IHShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.RepositoriesToggleBranchHierarchy" commandName="Toggle Branch Representation" category="_1xf4tnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3IXShEeu9JMzr41TM2A" elementId="org.eclipse.ltk.ui.refactoring.commands.deleteResources" commandName="Delete Resources" description="Delete the selected resources and notify LTK participants." category="_1xf4uXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3InShEeu9JMzr41TM2A" elementId="org.eclipse.ui.file.print" commandName="Print" description="Print" category="_1xf4knShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3I3ShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.debug.ui.commands.AllReferences" commandName="All References" description="Inspect all references to the selected object" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3JHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.junit.junitShortcut.rerunLast" commandName="Rerun JUnit Test" description="Rerun JUnit Test" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3JXShEeu9JMzr41TM2A" elementId="org.eclipse.wst.sse.ui.format.active.elements" commandName="Format Active Elements" description="Format active elements" category="_1xf4iHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3JnShEeu9JMzr41TM2A" elementId="org.eclipse.datatools.connectivity.commands.import" commandName="Import Profiles Command" description="Command to import connection profiles" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3J3ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.showRulerContextMenu" commandName="Show Ruler Context Menu" description="Show the context menu for the ruler" category="_1xf4lHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3KHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.search.references.in.working.set" commandName="References in Working Set" description="Search for references to the selected element in a working set" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3KXShEeu9JMzr41TM2A" elementId="org.eclipse.mylyn.tasks.ui.command.task.clearOutgoing" commandName="Clear Outgoing Changes" category="_1xf4jnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3KnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.folding.collapse" commandName="Collapse" description="Collapses the folded region at the current selection" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3K3ShEeu9JMzr41TM2A" elementId="org.eclipse.epp.mpc.ui.command.showFavorites" commandName="Eclipse Marketplace Favorites" description="Open Marketplace Favorites" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3LHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.smartEnterInverse" commandName="Insert Line Above Current Line" description="Adds a new line above the current line" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3LXShEeu9JMzr41TM2A" elementId="org.eclipse.ui.window.spy" commandName="Show Contributing Plug-in" description="Shows contribution information for the currently selected element" category="_1xf4lHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3LnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.help.helpSearch" commandName="Help Search" description="Open the help search" category="_1xf4snShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3L3ShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.infer.type.arguments" commandName="Infer Generic Type Arguments" description="Infer type arguments for references to generic classes and remove unnecessary casts" category="_1xf4sHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3MHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.goto.lineDown" commandName="Line Down" description="Go down one line of text" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3MXShEeu9JMzr41TM2A" elementId="org.eclipse.m2e.actions.LifeCycleClean.run" commandName="Run Maven Clean" description="Run Maven Clean" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3MnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition" commandName="Previous Edit Location" description="Previous edit location" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3M3ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.open.hyperlink" commandName="Open Hyperlink" description="Opens the hyperlink at the caret location or opens a chooser if more than one hyperlink is available" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3NHShEeu9JMzr41TM2A" elementId="org.eclipse.mylyn.wikitext.ui.convertToEclipseHelpCommand" commandName="Generate Eclipse Help (*.html and *-toc.xml)" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3NXShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.exception.occurrences" commandName="Search Exception Occurrences in File" description="Search for exception occurrences of a selected exception type" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3NnShEeu9JMzr41TM2A" elementId="org.eclipse.debug.ui.command.prevpage" commandName="Previous Page of Memory" description="Load previous page of memory" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3N3ShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.debug.ui.commands.ForceReturn" commandName="Force Return" description="Forces return from method with value of selected expression " category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3OHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.ide.configureFilters" commandName="Filters..." description="Configure the filters to apply to the markers view" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3OXShEeu9JMzr41TM2A" elementId="org.eclipse.eclemma.ui.importSession" commandName="Import Session..." category="_1xf4kXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3OnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.navigate.previousTab" commandName="Previous Tab" description="Switch to the previous tab" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3O3ShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.declarations.in.hierarchy" commandName="Declaration in Hierarchy" description="Search for declarations of the selected element in its hierarchy" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3PHShEeu9JMzr41TM2A" elementId="org.eclipse.ui.dialogs.openMessageDialog" commandName="Open Message Dialog" description="Open a Message Dialog" category="_1xf4mHShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3PXShEeu9JMzr41TM2A" elementId="title" name="Title"/>
+    <parameters xmi:id="_1xf3PnShEeu9JMzr41TM2A" elementId="message" name="Message"/>
+    <parameters xmi:id="_1xf3P3ShEeu9

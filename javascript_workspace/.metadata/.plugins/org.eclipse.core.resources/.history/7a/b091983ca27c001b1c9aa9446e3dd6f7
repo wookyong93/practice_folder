@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{margin:0px;}
+body{
+	padding :20px;
+}
+#timeMain{
+	background:#555;
+	border:#fff 1px solid;
+	width:400px;
+	height:100px;
+	
+	position : absolute;
+	left:50%;
+	margin-left:-300px;
+	top:50%;
+	margin-top: -200px;
+}
+#claendarMain{
+	background : #555;
+	border : #fff 1px solid;
+	width: 400px;
+	height: 300px;
+	position:absolute;
+	left : 50%;
+	margin-left: -300px;
+	top: 50%;
+	margin-top: -100px;
+}
+#timeView{
+	position:absolute;
+	left:40px;
+	top:10px;
+	font-size : 50px;
+	color : white;
+}
+#timeDateView{
+	position:absolute;
+	left : 40px;
+	top : 10px;
+	font-size:20px;
+	color:rgb(223,181,68);
+}
+#timeWindowCtlBtn{
+	position:absolute;
+	right:0px;
+	top: 0px;
+	padding:10px;
+	color:white;
+}
+#timeWindowCtlBtn:hover{
+	background-color:#888;
+}
+#claendarWindowCtlBtn{
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:10px;
+	color:white;
+}
+#calendarWindowCtlBtn:hover{
+	background-color:#888;
+}
+#calendarBeforeBtn{
+	position:absolute;
+	top: 50%;
+	left:0px;
+	padding : 10px;
+	color:white;
+}
+#claendarBeforeBtn:hover{
+	background-color:#888;
+}
+#calendarAfterBtn{
+	position:absolute;
+	top: 50%;
+	left:0px;
+	padding : 10px;
+	color:white;
+}
+#claendarAfterBtn:hover{
+	background-color:#888;
+}
+#calendarYearMonth{
+	position:absolute;
+	top:10px;
+	left:40px;
+	color:white;
+	font-size:20px;
+}
+#calendarDate{
+	position:absolute;
+	top:40px;
+	left:40px;
+	color:white;
+	font-size:20px;
+	
+	width:320px;
+	height:240px;
+	background :#888;
+}

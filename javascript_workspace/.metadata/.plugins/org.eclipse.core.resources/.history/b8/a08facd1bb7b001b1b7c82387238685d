@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 14 풀이</title>
+<script>
+	/* var com = Math.floor(Math.random()*100+1);
+	//(0-99+1) 0 - 100; */
+	window.onload = function(){
+	var com = Math.floor(Math.random()*100)+1;
+	// (0 - 99)+1 : 1 - 100;
+		var i =1;
+		var increase = setInterval(function(){
+			var user = prompt(i+'번째 시도');
+			if(com == user){
+				alert('승리');
+				clearInterval(increase);	
+			}else if(com >user){
+				alert('up');
+			}else {
+				alert('down');
+			}
+			i++;
+			if(i>10){
+				alert('패배하셧습니다. 정답은 '+com+'입니다.');
+				clearInterval(increase);
+			}
+		},2000);
+	
+		var restart = document.getElementById('restart');
+		restart.onclick =function(){
+			location.reload();
+		}
+		var end = document.getElementById('end');
+		end.onclick = function(){
+			window.close();
+		}
+	}
+	
+	
+</script>
+</head>
+<body>
+	<button id = 'restart'>재시작</button>
+	<button id = 'end'>종료</button>
+</body>
+</html>

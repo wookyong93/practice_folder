@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+   function createEle(){
+      var div = document.createElement('div');
+      var ol = document.createElement('ol');
+      var li=[];
+	  var a =[];	
+	  for(i =0; i<3;i++){
+    	  li[i] = document.createElement('li');
+    	  a[i] = document.createElement('a');
+    	  li[i].appendChild(a[i]);
+    	  ol.appendChild(li[i]);
+      }
+      var site=['구글','다음','네이버'];
+      
+      var url =['https://www.google.com','https://www.daum.net','https://www.naver.com']
+      console.log(txt[0])
+      for(var j =0; j<3 ; j++){
+    	  	var txt[j] = document.createTextnode(site[j]);
+		      a[j].appendChild(txt[j]);
+		      a[j].setAttribute('href', url[j]);
+		      a[j].setAttribute('target', '_blank');
+		      a[j].setAttribute('title', txt[j]+ '사이트로 이동');
+      }	 
+      div.appendChild(ol);
+      
+      document.body.appendChild(div);
+   }
+   
+   addEventListener('load', createEle);
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

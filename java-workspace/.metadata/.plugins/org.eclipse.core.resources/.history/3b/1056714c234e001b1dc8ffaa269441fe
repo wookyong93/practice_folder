@@ -1,0 +1,43 @@
+package ex05;
+
+import java.util.Scanner;
+
+public class Quiz05 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int menu =0;
+		int kor = 0;
+		int eng = 0;
+		int meth = 0;
+		String name = null;
+		while(true) {
+			System.out.println("1. 점수 입력 \n2. 점수 출력\n0. 프로그램 종료 ");
+			System.out.println("===================");
+			System.out.println("메뉴 선택 : ");
+			menu =sc.nextInt();
+			if(menu>=0 && menu<=2) {
+				switch (menu){
+				case 1 : 
+					do {
+						System.out.println(" 이름입력 : ");
+						name = sc.next();
+						System.out.println("국어 점수 입력 : ");
+						kor = sc.nextInt();
+						System.out.println("영어 점수 입력 :");
+						eng = sc.nextInt();
+						System.out.println("수학 점수 입력 : ");
+						meth = sc.nextInt();	
+					}while(kor>100 || kor <0);
+						
+				}
+				
+			}else {
+				System.out.println("범위가 벗어났습니다.");
+			}	
+			if(menu ==0 ) {
+				System.out.println("프로그램 종료");
+				break;
+			}
+		}	
+	}
+}

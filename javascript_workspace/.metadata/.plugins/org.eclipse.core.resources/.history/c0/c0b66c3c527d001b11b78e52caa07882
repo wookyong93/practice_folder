@@ -1,0 +1,39 @@
+@charset "UTF-8";
+#indexPage{
+	border: 20px solid lightblue;
+	position:absolute;
+	width:500px;
+	height:300px;
+	left:50%;
+	margin-left:-250px;
+	top:50%;
+	margin-top:-150px;
+	text-align: center;
+}
+#logo{
+	text-align: left;
+}
+img{
+	width:100px;
+}
+label{
+	font-size:20px;
+	width: 100px;
+}
+#loogin{
+	margin:auto;
+	width: 300px;
+	text-align: left;
+	padding:10px 0px;
+}
+#login > input{
+	margin:5px 5px;
+	width:200px;
+	height: 25px;
+}
+button{
+	width: 80px;
+	height: 35px;
+	background-color: lightgreen;
+	color:white;
+}

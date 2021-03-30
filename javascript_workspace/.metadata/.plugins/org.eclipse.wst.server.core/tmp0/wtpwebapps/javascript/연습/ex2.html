@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+   window.onload = function(){
+      var frm =document.frm;
+      frm.onsubmit = function(){
+         var id = frm.id.value;
+         alert(id);         
+      }
+
+   }
+</script>
+</head>
+<body>
+   <form action="#" name="frm">
+      <input type="text" name="id" id="id">
+      <input type="submit" value="확인" id="btn">
+   </form>
+</body>
+</html>

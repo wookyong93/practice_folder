@@ -1,0 +1,91 @@
+In menu" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3onShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.copyLineUp" commandName="Duplicate Lines" description="Duplicates the selected lines and leaves the selection unchanged" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3o3ShEeu9JMzr41TM2A" elementId="org.eclipse.debug.ui.commands.ToggleMethodBreakpoint" commandName="Toggle Method Breakpoint" description="Creates or removes a method breakpoint" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3pHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.navigate.java.open.structure" commandName="Open Structure" description="Show the structure of the selected element" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3pXShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.correction.assignToLocal.assist" commandName="Quick Assist - Assign to local variable" description="Invokes quick assist and selects 'Assign to local variable'" category="_1xf4jXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3pnShEeu9JMzr41TM2A" elementId="org.eclipse.ui.navigate.next" commandName="Next" description="Navigate to the next item" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3p3ShEeu9JMzr41TM2A" elementId="org.eclipse.mylyn.tasks.bugs.commands.newTaskFromMarker" commandName="New Task from Marker..." description="Report as Bug from Marker" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3qHShEeu9JMzr41TM2A" elementId="org.eclipse.wst.server.run" commandName="Run" description="Run server" category="_1xf4j3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3qXShEeu9JMzr41TM2A" elementId="org.eclipse.mylyn.context.ui.commands.focus.view" commandName="Focus View" category="_1xf4oHShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3qnShEeu9JMzr41TM2A" elementId="viewId" name="View ID to Focus" optional="false"/>
+  </commands>
+  <commands xmi:id="_1xf3q3ShEeu9JMzr41TM2A" elementId="org.eclipse.eclemma.ui.testNgShortcut.coverage" commandName="Coverage TestNG Test" description="Coverage TestNG Test" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3rHShEeu9JMzr41TM2A" elementId="org.eclipse.debug.ui.commands.StepReturn" commandName="Step Return" description="Step return" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3rXShEeu9JMzr41TM2A" elementId="org.eclipse.ui.browser.openBundleResource" commandName="Open Resource in Browser" description="Opens a bundle resource in the default web browser." category="_1xf4lHShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3rnShEeu9JMzr41TM2A" elementId="plugin" name="Plugin"/>
+    <parameters xmi:id="_1xf3r3ShEeu9JMzr41TM2A" elementId="path" name="Path"/>
+  </commands>
+  <commands xmi:id="_1xf3sHShEeu9JMzr41TM2A" elementId="org.eclipse.jst.pagedesigner.source" commandName="Source Code" category="_1xf4pHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3sXShEeu9JMzr41TM2A" elementId="org.eclipse.ui.help.aboutAction" commandName="About" description="Open the about dialog" category="_1xf4snShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3snShEeu9JMzr41TM2A" elementId="org.eclipse.wst.common.project.facet.ui.ConvertProjectToFacetedForm" commandName="Convert to Faceted Form..." category="_1xf4knShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3s3ShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.annotate.classFile" commandName="Annotate Class File" description="Externally add Annotations to a Class File." category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3tHShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.team.stash.create" commandName="Stash Changes..." category="_1xf4tnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3tXShEeu9JMzr41TM2A" elementId="org.eclipse.mylyn.tasks.ui.command.activateSelectedTask" commandName="Activate Selected Task" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3tnShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace" commandName="References in Workspace" description="Search for references to the selected element in the workspace" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3t3ShEeu9JMzr41TM2A" elementId="org.eclipse.wst.sse.ui.format.document" commandName="Format" description="Format selection" category="_1xf4iHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3uHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.correction.addNonNLS" commandName="Quick Fix - Add non-NLS tag" description="Invokes quick assist and selects 'Add non-NLS tag'" category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3uXShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.search.write.access.in.workspace" commandName="Write Access in Workspace" description="Search for write references to the selected element in the workspace" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3unShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.team.RemoveFromIndex" commandName="Remove from Index" category="_1xf4tnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3u3ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.newWizard" commandName="New" description="Open the New item wizard" category="_1xf4knShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3vHShEeu9JMzr41TM2A" elementId="newWizardId" name="New Wizard"/>
+  </commands>
+  <commands xmi:id="_1xf3vXShEeu9JMzr41TM2A" elementId="org.eclipse.ui.window.newWindow" commandName="New Window" description="Open another window" category="_1xf4lHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3vnShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.uncomment" commandName="Uncomment" description="Uncomment the selected Java comment lines" category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3v3ShEeu9JMzr41TM2A" elementId="org.eclipse.e4.ui.importer.configureProject" commandName="Configure and Detect Nested Projects..." category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3wHShEeu9JMzr41TM2A" elementId="org.eclipse.eclemma.ui.selectActiveSession" commandName="Select Active Session..." category="_1xf4kXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3wXShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.history.CompareVersions" commandName="Compare with Each Other" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3wnShEeu9JMzr41TM2A" elementId="org.eclipse.equinox.p2.ui.sdk.install" commandName="Install New Software..." category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3w3ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.window.customizePerspective" commandName="Customize Perspective" description="Customize the current perspective" category="_1xf4lHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3xHShEeu9JMzr41TM2A" elementId="org.eclipse.mylyn.context.ui.commands.interest.decrement" commandName="Make Less Interesting" description="Make Less Interesting" category="_1xf4jHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3xXShEeu9JMzr41TM2A" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar" commandName="Run Last Launched External Tool" description="Runs the last launched external Tool" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3xnShEeu9JMzr41TM2A" elementId="org.eclipse.egit.ui.CheckoutCommand" commandName="Check Out" category="_1xf4tnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3x3ShEeu9JMzr41TM2A" elementId="org.eclipse.codegen.ui.jet.refactor.quickmenu" commandName="Show Refactor Quick Menu" description="Shows the refactor quick menu" category="_1xf4p3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3yHShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file" commandName="Search All Occurrences in File" description="Search for all occurrences of the selected element in its declaring file" category="_1xf4tXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3yXShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.moveLineUp" commandName="Move Lines Up" description="Moves the selected lines up" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3ynShEeu9JMzr41TM2A" elementId="org.eclipse.equinox.p2.ui.discovery.commands.ShowBundleCatalog" commandName="Show Bundle Catalog" category="_1xf4oHShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf3y3ShEeu9JMzr41TM2A" elementId="org.eclipse.equinox.p2.ui.discovery.commands.DirectoryParameter" name="Directory URL"/>
+    <parameters xmi:id="_1xf3zHShEeu9JMzr41TM2A" elementId="org.eclipse.equinox.p2.ui.discovery.commands.TagsParameter" name="Tags"/>
+  </commands>
+  <commands xmi:id="_1xf3zXShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.gotoBreadcrumb" commandName="Show In Breadcrumb" description="Shows the Java editor breadcrumb and sets the keyboard focus into it" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3znShEeu9JMzr41TM2A" elementId="org.eclipse.pde.ui.runtimeWorkbenchShortcut.debug" commandName="Debug Eclipse Application" description="Debug Eclipse Application" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf3z3ShEeu9JMzr41TM2A" elementId="org.eclipse.userstorage.ui.showPullDown" commandName="Show Pull Down Menu" category="_1xf4snShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf30HShEeu9JMzr41TM2A" elementId="intoolbar" name="In Tool Bar" optional="false"/>
+  </commands>
+  <commands xmi:id="_1xf30XShEeu9JMzr41TM2A" elementId="org.eclipse.jpt.jpa.ui.makePersistent" commandName="Make Persistent..." category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf30nShEeu9JMzr41TM2A" elementId="org.eclipse.datatools.sqltools.sqleditor.ExecuteSelectionAction" commandName="Execute Selected Text" category="_1xf4t3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf303ShEeu9JMzr41TM2A" elementId="org.eclipse.jpt.jaxb.ui.command.createPackageInfo" commandName="Create package-info.java" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf31HShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.edit.text.java.extract.class" commandName="Extract Class..." description="Extracts fields into a new class" category="_1xf4sHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf31XShEeu9JMzr41TM2A" elementId="org.eclipse.jdt.ui.correction.extractConstant.assist" commandName="Quick Assist - Extract constant" description="Invokes quick assist and selects 'Extract constant'" category="_1xf4vHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf31nShEeu9JMzr41TM2A" elementId="org.eclipse.compare.copyRightToLeft" commandName="Copy from Right to Left" description="Copy Current Change from Right to Left" category="_1xf4rnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf313ShEeu9JMzr41TM2A" elementId="org.eclipse.debug.ui.commands.OpenProfileConfigurations" commandName="Profile..." description="Open profile launch configuration dialog" category="_1xf4l3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf32HShEeu9JMzr41TM2A" elementId="org.eclipse.jpt.jpa.ui.newMappingFile" commandName="JPA ORM Mapping File" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf32XShEeu9JMzr41TM2A" elementId="org.eclipse.ui.ide.markCompleted" commandName="Mark Completed" description="Mark the selected tasks as completed" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf32nShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.comment" commandName="Comment" description="Turn the selected lines into JavaScript comments" category="_1xf4jXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf323ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.recenter" commandName="Recenter" description="Scroll cursor line to center, top and bottom" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf33HShEeu9JMzr41TM2A" elementId="org.eclipse.jpt.jpa.ui.xmlFileUpgradeToLatestVersion" commandName="Upgrade JPA Document Version" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf33XShEeu9JMzr41TM2A" elementId="org.eclipse.ui.edit.text.scroll.lineDown" commandName="Scroll Line Down" description="Scroll down one line of text" category="_1xf4i3ShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf33nShEeu9JMzr41TM2A" elementId="org.eclipse.wst.sse.ui.search.find.occurrences" commandName="Occurrences in File" description="Find occurrences of the selection in the file" category="_1xf4iHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf333ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.ToggleCoolbarAction" commandName="Toggle Main Toolbar Visibility" description="Toggles the visibility of the window toolbar" category="_1xf4lHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf34HShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.navigate.open.type.in.hierarchy" commandName="Open Type in Hierarchy" description="Open a type in the type hierarchy view" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf34XShEeu9JMzr41TM2A" elementId="org.eclipse.wst.sse.ui.outline.customFilter" commandName="&amp;Filters" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf34nShEeu9JMzr41TM2A" elementId="org.eclipse.datatools.sqltools.sqlscrapbook.commands.openscrapbook" commandName="Open SQL Scrapboo&amp;k" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf343ShEeu9JMzr41TM2A" elementId="org.eclipse.ui.navigate.openResource" commandName="Open Resource" description="Open an editor on a particular resource" category="_1xf4qnShEeu9JMzr41TM2A">
+    <parameters xmi:id="_1xf35HShEeu9JMzr41TM2A" elementId="filePath" name="File Path" typeId="org.eclipse.ui.ide.resourcePath"/>
+  </commands>
+  <commands xmi:id="_1xf35XShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.correction.addBlock.assist" commandName="Quick Assist - Replace statement with block" description="Invokes quick assist and selects 'Replace statement with block'" category="_1xf4jXShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf35nShEeu9JMzr41TM2A" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.goto.previous.member" commandName="Go to Previous Member" description="Move the caret to the previous member of the JavaScript file" category="_1xf4qnShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf353ShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.ant.ui.actionSet.presentation/org.eclipse.ant.ui.toggleAutoReconcile" commandName="Toggle Ant Editor Auto Reconcile" description="Toggle Ant Editor Auto Reconcile" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf36HShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.datatools.sqltools.sqlscrapbook.actionSet/org.eclipse.datatools.sqltools.sqlscrapbook.actions.OpenScrapbookAction" commandName="Open SQL Scrapbook" description="Open scrapbook to edit SQL statements" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf36XShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.launchActionSet/org.eclipse.debug.internal.ui.actions.RunWithConfigurationAction" commandName="Run As" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf36nShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.launchActionSet/org.eclipse.debug.internal.ui.actions.RunHistoryMenuAction" commandName="Run History" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf363ShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.launchActionSet/org.eclipse.debug.internal.ui.actions.RunDropDownAction" commandName="Run" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf37HShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.launchActionSet/org.eclipse.debug.internal.ui.actions.DebugWithConfigurationAction" commandName="Debug As" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf37XShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.launchActionSet/org.eclipse.debug.internal.ui.actions.DebugHistoryMenuAction" commandName="Debug History" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf37nShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.launchActionSet/org.eclipse.debug.internal.ui.actions.DebugDropDownAction" commandName="Debug" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf373ShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.profileActionSet/org.eclipse.debug.internal.ui.actions.ProfileDropDownAction" commandName="Profile" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf38HShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.profileActionSet/org.eclipse.debug.internal.ui.actions.ProfileWithConfigurationAction" commandName="Profile As" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf38XShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.debug.ui.profileActionSet/org.eclipse.debug.internal.ui.actions.ProfileHistoryMenuAction" commandName="Profile History" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf38nShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.eclemma.ui.CoverageActionSet/org.eclipse.eclemma.ui.actions.CoverageDropDownAction" commandName="Coverage" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf383ShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.eclemma.ui.CoverageActionSet/org.eclipse.eclemma.ui.actions.CoverageAsAction" commandName="Coverage As" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf39HShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.eclemma.ui.CoverageActionSet/org.eclipse.eclemma.ui.actions.CoverageHistoryAction" commandName="Coverage History" category="_1xf4oHShEeu9JMzr41TM2A"/>
+  <commands xmi:id="_1xf39XShEeu9JMzr41TM2A" elementId="AUTOGEN:::org.eclipse.egit.ui.SearchActionSet/org.eclipse.egit.ui.actions.OpenCommitSearchPage" commandName="Git..." category="_1xf4oHShEeu9JMzr41TM2

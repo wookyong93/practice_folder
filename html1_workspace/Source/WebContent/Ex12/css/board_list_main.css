@@ -1,0 +1,28 @@
+!SESSION 2021-02-22 23:04:14.766 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-02-22 23:04:16.828
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.util.zip.ZipException: Exception in opening zip file: E:\JAVA\eclipse\html_eclipse\plugins\org.eclipse.egit.ui_5.10.0.202012080955-r.jar
+	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:349)
+	at org.eclipse.osgi.storage.bundlefile.ZipBundleFile.doOpen(ZipBundleFile.java:48)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.open(CloseableBundleFile.java:135)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.lockOpen(CloseableBundleFile.java:77)
+	at org.eclipse.osgi.storage.bundlefile.CloseableBundleFile.getEntry(CloseableBundleFile.java:271)
+	at org.eclipse.osgi.storage.Storage.listEntryPaths(Storage.java:2090)
+	at org.eclipse.osgi.storage.Storage.findEntries(Storage.java:2013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.findEntries(EquinoxBundle.java:714)
+	at org.apache.felix.scr.impl.BundleComponentActivator.findDescriptors(BundleComponentActivator.java:365)
+	at org.apache.felix.scr.impl.BundleComponentActivator.initialize(BundleComponentActivator.java:263)
+	at org.apache.felix.scr.impl.BundleComponentActivator.<init>(BundleComponentActivator.java:213)
+	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:552)
+	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:70)
+	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:421)
+	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+	at org.apache.

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz01</title>
+<script>
+	var num1;
+	num1 = prompt("정수 입력 ","");
+	var msg ='';
+	
+	if(num1 == ''){
+		msg = '<h3>입력이 되지 않았습니다.</h3><br>';
+	}else if(num1 == 0){
+		msg = '<h3>입력된 수는 0입니다.</h3><br>';	
+	}else if(num1%2 == 0){
+		msg = '<h3>입력된 수는 짝수입니다.</h3><br>';
+	}else if(num1%2 == 1){
+		msg = '<h3>입력된 수는 홀수입니다.</h3><br>';	
+	}else{
+		msg = '<h3>정수가 아닙니다.</h3><br>';
+	}
+	document.write(msg);
+	msg = (num1%2 == 0) ?
+		   num == 0 ? 
+		   num=='' ? '<h3>비어있습니다.</h3>' : '<h3>0입니다.</h3>':
+				   '<h3>짝수 입니다.</h3>' : '<h3>홀수 입니다.</h3>';
+		document.write(msg)
+</script>
+</head>
+<body>
+
+</body>
+</html>

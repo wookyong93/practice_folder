@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UP & DOWN</title>
+<script>
+	var num =[];
+	for(var i =1 ; i<=100;i++){
+		num.push(i);
+	}
+	console.log(num);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

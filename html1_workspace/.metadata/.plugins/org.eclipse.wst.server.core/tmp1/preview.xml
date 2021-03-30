@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="Source" name="Source" path="K:/JAVA/workspace/html1_workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/Source" type="static"/>
+</server>

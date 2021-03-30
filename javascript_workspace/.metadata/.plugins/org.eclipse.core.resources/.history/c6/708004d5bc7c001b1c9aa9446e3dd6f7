@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+function main(){
+	let thumbImg=document.getElementsByClassName('thumb');
+	for(let i=0;i<img.length;i++){
+		thumbImg[i].addEventListener('click',LightBoxOpen);
+	}
+	let btnClose =document.querySelector('.btnClose');
+	btnClose.addEventListener('click',LightBoxClose);
+	
+}
+function LightBoxOpen(event){
+	imgChange(event);
+}
+function imgChange

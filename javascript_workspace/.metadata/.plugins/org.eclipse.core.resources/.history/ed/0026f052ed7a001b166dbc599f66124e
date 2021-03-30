@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 9</title>
+<script>
+	class student{
+		
+		insertName(name){
+			this.name = name;
+		}
+		isertAge(age){
+			this.age = age;
+		}
+		printOut(){
+			return'이름 : '+this.name+'<br>나이 : '+this.age+'<br>주소 : '+this.address;
+		}
+		
+	}
+	
+	var stu1 = new student();
+	stu1.insertName = prompt('입력');
+	document.write(stu1.printOut());
+			
+</script>
+</head>
+<body>
+
+</body>
+</html>

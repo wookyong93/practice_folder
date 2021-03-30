@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let curYear = new Date().getFullYear();
+	for(let i = 0 ; i< 12 ; i++){
+		document.write((i+1)+'월 : ');
+		document.write(32 - new Date(curYear,i,32).getDate());
+		
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

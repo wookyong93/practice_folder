@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{
+		margin:auto;
+		width:320px;
+		text-align: center;
+	}
+	table{
+		width:320px;
+		background:rgb(239,252,216);
+	}
+	th{
+		height:80px;
+		padding-left : 10px;
+		padding-right: 10px;
+	}
+	th > input {
+		width:100%;
+		border:none;
+		text-align:right;
+		font-size:48px;
+	}
+	td > input[type='button'] {
+		width:100%;
+		height:60px;
+		color:rgb(21,189.255);
+		background:rgb(208,252,179);
+		font-size:36px;
+		border:none;
+	}
+	td > input[type='button']:hover{
+		background:rgb(176,216,151);
+	}
+	td > input[type='button']:active{
+		background:rgb(94,160,53);
+	}
+
+</style>
+<script>
+	function calc(){
+			let inputLst = document.getElementsByTagName('input');
+			document.getElementById('result').value = 0;
+			for(let i=0; i<inputLst.length;i++){
+				inputLst[i].addEventListener('click',btnAction);
+			}
+	}
+	function btnAction(){
+		let result = document.getElementById('result');
+		if(result.value == '0'){
+			result.value='';
+		}
+		if(result.value == 'c'){
+			result.value='0';
+		}else if (this.value =='<'){
+			result.value=result.value.substr(0,result.value.length-1);
+			//12345
+			if(result.value==''){
+				result.value ='0';
+			}
+		}else if(this.value == '='){
+			result.value = eval(result.value);
+		}else if(isNaN(this.value)){
+			if(isNaN(result.value.charAt(length-1))){
+				result.value = result.value.substr(0,length-1);
+			}
+			result.value += this.value;
+		}else{
+			result.value += this.value;
+			console.log(result.value);
+		}
+	}
+</script>
+</head>
+<body>
+		<table>
+			<tr>
+				<th colspan =4>
+				<input type = 'text' id = 'result' value ="0">
+				</th>
+			</tr>
+			<tr>
+				<td><input type='button' value ='7'></td>
+				<td><input type='button' value ='8'></td>
+				<td><input type='button' value ='9'></td>
+				<td><input type='button' value ='+'></td>
+			</tr>
+			<tr>
+				<td><input type='button' value ='4'></td>
+				<td><input type='button' value ='5'></td>
+				<td><input type='button' value ='6'></td>
+				<td><input type='button' value ='-'></td>
+			</tr>
+			<tr>
+				<td><input type='button' value ='1'></td>
+				<td><input type='button' value ='2'></td>
+				<td><input type='button' value ='3'></td>
+				<td><input type='button' value ='*'></td>
+			</tr>
+			<tr>
+				<td colspan=2><input type ='button' value ='0'></td>
+				<td><input type='button' value='&'></td>
+				<td><input type='button' value='/'></td> 
+			</tr>
+			<tr>
+				<td><input type ='button' value='c'></td>
+				<td><input type='button' value='<'></td>
+				<td colspan=2><input type='button' value='='></td>
+			</tr>
+		</table>
+<script>
+calc();
+</script>
+</body>
+</html>

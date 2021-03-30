@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+function idCheck(){
+	var id = document.getElementById('id').value;
+	
+	if(id == 'user'){
+		alert('중복된 아이디 입니다. 다시 입력하세요');
+		document.getElementById('id').value = '';
+		document.getElementById('id').focus();
+	}
+	else{
+		alert('사용가능한 아이디 입니다.')
+		document.getElementById('pwd1').focus();
+	}
+}
+function pwCheck(){
+	var pwd1 = document.getElementById('pw1').value;
+	var pwd2 = document.getElementById('pw2').value;
+	
+	if(pwd1 == pwd2){
+		alert('암호 일치');
+	}else{
+		alert('불일치');
+	}
+	
+}

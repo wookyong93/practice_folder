@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>미디어쿼리</title>
+<meta name="viewport" content="width=device-width, initail-scale=1">
+<style>
+   div {
+      margin:0 auto;
+      width:1280px;
+      height:824px;
+      background-color: yellow;
+      text-align:center;
+   }
+   span {
+      font-size:100px;
+   }
+   /* 저해상도 모니터 */
+   @media (min-width:1025px) and (max-width:1280px){
+      div {
+         margin:0 auto;
+         width:1025px;
+         height:824px;
+         background-color: green;
+         text-align:center;
+      }
+      span {
+         font-size:80px;
+      }
+   }
+   /* 태블릿 */
+   @media (min-width:768px) and (max-width:1024px){
+      div {
+         margin:0 auto;
+         width:768px;
+         height:824px;
+         background-color: orange;
+         text-align:center;
+      }
+      span {
+         font-size:60px;
+      }
+   }
+   
+   /* 저해상도 태블릿 481px ~ 767px */
+   @media (min-width:481px) and (max-width:767px){
+      div {
+         width:481px;
+         height:600px;
+         background-color:pink;
+      }
+      span {
+         font-size:40px;
+      }
+   }
+   /* mobile 320px ~ 480px */
+   @media (max-width:480px){
+      div {
+         width:320px;
+         height:400px;
+         background-color:blue;
+      }
+      span {
+         font-size:20px;
+      }
+ </style>  
+</head>
+<body>
+	<div>
+		<span>안녕하세요</span>
+	</div>
+</body>
+</html>

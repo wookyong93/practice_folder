@@ -1,0 +1,9 @@
+package ex05;
+
+public class StaticExam {
+	//static : 정적
+	//static은 컴파일할 떄 미리 생성되는 것들을 의미한다.
+	public void main(String[] args) {
+	 System.out.println("실행");
+}
+}

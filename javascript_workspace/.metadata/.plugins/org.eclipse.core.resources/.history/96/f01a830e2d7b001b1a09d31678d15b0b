@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제13</title>
+<script type="text/javascript">
+	bt.onclick =function(){
+		var bt = document.getElementById('bt');
+		var i = 0;
+		var increase = setInterval(function(){
+			i++;
+			alert(i);
+		},2000);
+	
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

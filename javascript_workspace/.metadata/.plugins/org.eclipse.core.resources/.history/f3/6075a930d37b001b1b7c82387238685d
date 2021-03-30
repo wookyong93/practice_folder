@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 15</title>
+<script>
+ function createEle(){
+	 var bt = document.getElementById('bt');
+	 function popup(){
+		var ol = document.createElement('ol');
+		
+		var a1 = document.createElement('a');
+		var a2 = document.createElement('a');
+		var a3 = document.createElement('a');
+		
+		var li1 = document.createElement('li');
+		var li2 = document.createElement('li');
+		var li3 = document.createElement('li');
+		
+	 	var txt1 = document.createTextNode('구글');
+	 	var txt2 = document.createTextNode('다음');
+	 	var txt3 = document.createTextNode('네이버');
+	 	
+	 	
+	 	a1.appendChild(txt1);
+		a1.setAttribute('href','https://www.google.com');
+		a1.setAttribute('target','_blank');
+		a1.setAttribute('title','구글로 이동');
+	 	li1.appendChild(a1);
+	 	
+	 	
+	 	a2.appendChild(txt2);
+		a2.setAttribute('href','https://www.daum.net');
+		a2.setAttribute('target','_blank');
+		a2.setAttribute('title','다음으로 이동');
+	 	li2.appendChild(a2);
+	 	
+	 	ol.appendChild(li1);
+	 	ol.appendChild(li2);
+	 	ol.appendChild(li3);
+	 	document.body.appendChild(ol);
+	 }
+	 bt.onclick = popup;
+ }
+ addEventListener('load',createEle);
+</script>
+</head>
+<body>
+	<button id = 'bt'>요소 생성</button>
+</body>
+</html>

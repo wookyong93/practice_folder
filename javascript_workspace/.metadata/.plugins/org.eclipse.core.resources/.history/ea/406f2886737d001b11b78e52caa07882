@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>음악 스트리밍 시스템</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div id ='mainPage'>
+	<div id="logo">
+		<img src='img/melon.jpg'> 음악 스트리밍 시스템 <button id='mypage' onclick ='mypage()'>내정보</button> <button id='logout' onclick = 'logout()'>로그아웃</button>
+	</div>
+	<div id ='search'>
+		<label>검 색</label><input type='text'> <input type='button' id='searchBtn' value ='검색' onclick = 'search()'>
+	</div>
+	<div id ='txt'><h1>장 르 선 택</h1></div>
+	<div id ='select'>
+		<input type='button' id='ballade' value ='발라드' onclick ='balladeInfo()'>
+		<input type='button' id='ballade' value ='힙합'>
+		<input type='button' id='ballade' value ='댄스'>
+		<input type='button' id='ballade' value ='락'>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bucket List</title>
+<style>
+	div{
+		margin:auto;
+		text-align: center;
+	}
+	#mainDiv{
+		width:30%;
+		background-color:beige;
+	}
+	ul{
+		list-style-position:inside;
+		padding:0;
+	}
+	li{
+		 text-align:left;
+		 border-bottom: 1px solid #999;
+		 padding: 5px 10px;
+	}
+	#addBtn{
+		padding: 5px 10px;
+		border: 0px;
+		background: rgb(78,123,247);
+		color:white;
+		border-radius:5px;
+	}
+	.active{
+		background:darkgray;
+		color:white;
+	}
+</style>
+<script>
+unction ListClick(){
+	let lst = document.getElementById('lst');
+	// ul 태그 가져오기
+	let liLst = lst.getElementsByTagName('li');
+	// li 태그 가져오기
+	
+	for(let i=0;i<liLst.length;i++){
+		liLst[i].addEventListener('click',activeList);
+	}
+}
+function activeList(event){
+	let title = document.getElementById('title');
+	title.innerText = this.innerText;
+	
+	let liLst = event.target.parentNode.children;
+	for (let j=0;j<liLst.length;j++){
+		liLst[j].removeAttribute('class');
+	}
+	this.setAttribute('class','active');
+}
+</script>
+</head>
+<body>
+		<div id = 'mainDiv'>
+			<h1 id = 'title'>Bucket List</h1>
+			<hr><!-- 밑줄 -->
+			<button id ='addBtn'>목록 추가</button>
+			<ul id = 'lst'>
+				<li>세계일주</li>
+				<li>달착륙</li>
+				<li>태양 근거리 실사</li>
+			</ul>
+		</div>
+		<script>
+			ListClick();
+		</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	document.write(new Date(2020,0,0)+'<br>');
+	document.write(new Date(2020,0,1)+'<br>');
+	document.write('<br><br>');
+	document.write(new Date(2020,1,0)+'<br>');
+	document.write(new Date(2020,1,1)+'<br>');
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let cuttentDate = new Date();
+	
+	document.write(currentDate.getFullYear()+'년');
+	document.write(currentDate.getMonth() +'월');
+	document.write(currentDate.getDate() +'일');
+	document.write(currentDate.getDay()+'요일');
+	document.write(currentDate.getHours()+'시');
+	document.write(currentDate.getMinutes()+'분');
+	document.write(currnetDate.getSeconds()+'초');
+</script>
+</head>
+<body>
+
+</body>
+</html>

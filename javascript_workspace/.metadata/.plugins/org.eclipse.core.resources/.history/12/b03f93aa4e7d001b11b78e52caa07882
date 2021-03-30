@@ -1,0 +1,27 @@
+@charset "UTF-8";
+#indexPage{
+	border: 20px solid lightblue;
+	position:absolute;
+	width:500px;
+	height:300px;
+	left:50%;
+	margin-left:-250px;
+	top:50%;
+	margin-top:-150px;
+	text-align: center;
+}
+#title{
+	width: 500px;
+	text-align: center;
+}
+#login{
+	width: 500px;
+	text-align: center;
+}
+#btn{
+	width: 500px;
+	text-align: center;
+}
+img{
+	width:100px;
+}

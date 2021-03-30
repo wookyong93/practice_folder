@@ -1,0 +1,53 @@
+@charset "UTF-8";
+#indexPage {
+   border: 20px solid lightblue;
+   position:absolute;
+   width:500px;
+   height:350px;
+   left:50%;
+   margin-left:-250px;
+   top:50%;   
+   margin-top:-100px;
+   text-align:center;
+   padding:5px;
+}
+#logo{
+   text-align:left;
+}
+#join {
+   margin:auto;
+   width: 400px;
+   text-align: left;
+   padding:10px 0px;
+}
+#join > input {
+   margin:10px 0px;
+   width:200px;
+   height: 25px;
+}
+img {
+   width:100px;
+}
+#join > label{
+   font-size: 20px;
+   text-align: left;
+}
+#join > button{
+   width:100px;
+   height:25px;
+   background-color: lightgreen;
+   color:white;
+}
+#bt{
+	width: 300px;
+}
+button{
+   width:80px;
+   height:35px;
+   margin-left:50px;
+   background-color: lightgreen;
+		color:white;
+}
+#joinBtn{
+	margin-right: 0;
+}

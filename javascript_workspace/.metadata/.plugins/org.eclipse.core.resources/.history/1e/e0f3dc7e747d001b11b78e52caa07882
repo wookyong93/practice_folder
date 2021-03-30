@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>음악 스트리밍 시스템</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript">
+	function mypage(){
+		location.href='mypage.html';
+	}
+	function logout(){
+		confirm('정말 로그아웃 하시겠습니까?')
+		if(true){
+			location.href='login.html';
+		}
+	}
+	function search(){
+		var searchTxt = document.getElementById('searchTxt').value;
+		alert(searchTxt+'의 대한 검색이 완료되었습니다.')
+	}
+</script>
+</head>
+<body>
+<div id ='mainPage'>
+	<div id="logo">
+		<img src='img/melon.jpg'> 음악 스트리밍 시스템 <button id='mypage' onclick ='mypage()'>내정보</button> <button id='logout' onclick = 'logout()'>로그아웃</button>
+	</div>
+	<div id ='search'>
+		<label>검 색</label><input type='text' id ='searchTxt'> <input type='button' id='searchBtn' value ='검색' onclick = 'search()'>
+	</div>
+	<div id ='txt'><h1>장 르 선 택</h1></div>
+	<div id ='select'>
+		<input type='button' id='ballade' value ='발라드' onclick ='balladeInfo()'>
+		<input type='button' id='ballade' value ='힙합'>
+		<input type='button' id='ballade' value ='댄스'>
+		<input type='button' id='ballade' value ='락'>
+	</div>
+</div>
+</body>
+</html>
