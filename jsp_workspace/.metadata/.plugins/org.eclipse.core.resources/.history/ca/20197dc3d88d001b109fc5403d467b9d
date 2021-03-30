@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import ="java.util.*,java.sql.*,member.*,board.*"
+    isELIgnored="false"
+    %>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <jsp:useBean id="bDao" class="board.BoardDAO"/>
+    <%
+    	request.setCharacterEncoding("UTF-8");
+    	List<BoardDTO> articleList = bDao.aticleList();
+    	
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+<style>
+	table{
+		margin:auto;
+		text-align: center;
+		border-collapse: collapse;
+	}
+	th,td{
+		border:1px solid black;
+	}
+	body{
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	<c:if test="${empty loginID}">
+		<script>
+		alert('로그인이 되어있지 않습니다. 로그인해주세요');
+		location.href="login.jsp";
+		</script>
+	</c:if>
+	<span>${loginID}님 환영합니다.</span>
+	<br><br>
+	<table>
+	<tr>
+		<th width="10%">글번호</th>
+		<th width="60%">제목</th>
+		<th width="10%">작성자</th>
+		<th width="10%">작성일</th>
+	<tr>
+	<c:forEach var="list" items="<%=articleList %>">
+	<tr>
+		<td>${list.articleNO}</td>
+		<td>${list.title}</td>
+		<td>${list.id}</td>
+		<td>${list.writeDate}</td>
+	</tr>
+	</c:forEach>
+	</table>
+</body>
+</html>

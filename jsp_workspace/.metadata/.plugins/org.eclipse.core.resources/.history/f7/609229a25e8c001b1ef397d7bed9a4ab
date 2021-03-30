@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import="java.util.*,ex01.*"
+    isELIgnored="false"
+    %>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <jsp:useBean id="dao" class="ex01.BoardDAO"/>
+    <% String id = request.getParameter("id");
+    	session.getAttribute("id_");
+    	int no = Integer.parseInt(request.getParameter("no"));
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<c:if test="${id==}"
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제이쿼리 연습</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+	<input type="text" id="t_input"/>
+	<input type="button" value="입력하기" onclick="addText()"/>
+</body>
+</html>

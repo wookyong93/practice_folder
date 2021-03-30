@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import="java.util.*,ex01.*";
+    isELIgnored="false"
+    %>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <jsp:useBean id="dao" class="ex01.BoardDAO"/>
+    <jsp:useBean id="dto" class="ex01.BoardDTO"/>
+    <% %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+</body>
+</html>

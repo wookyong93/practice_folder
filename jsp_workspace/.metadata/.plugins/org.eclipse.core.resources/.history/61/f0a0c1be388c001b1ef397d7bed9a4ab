@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인창</title>
+<script type="text/javascript">
+	function fn_login(){
+		
+	}
+
+</script>
+</head>
+<body>
+	<form name = "frmLogin" style="text-align:center" action="loginChk.jsp" method="post">
+	<h1>L O G I N</h1>
+	<table ailgn="center">
+		<tr>
+			<th> I D : </th><td><input type="text" name="id"/></td>
+		</tr>
+		<tr>
+			<th> P W : </th><td><input type="text" name="pwd"/></td>
+		</tr>
+	</table>
+	<br> 
+	<input type="button" value="로그인" onclick="fn_login()"/>
+	<input type="button" value="종료" onclick = "window.close()"/>
+	</form>
+</body>
+</html>

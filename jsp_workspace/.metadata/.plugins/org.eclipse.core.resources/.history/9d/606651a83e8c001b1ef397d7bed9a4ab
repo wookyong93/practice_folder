@@ -1,0 +1,12 @@
+package ex01;
+
+import java.sql.Date;
+
+public class BoardDTO {
+	private int aticleNO;
+	private int parentNO;
+	private String title;
+	private String content;
+	private String id;
+	private Date writeDate;
+}

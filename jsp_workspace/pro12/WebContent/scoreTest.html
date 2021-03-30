@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>시험점수입력창</title>
+<script>
+function fn_check(){
+	var frm=document.frmScore;
+	var score=frm.score.value;
+	if(score<0 || score>100){
+		alert("점수는 0~100점만 입력 가능합니다.");
+		document.frmScore.score.value="";
+		document.frmScore.score.focus();
+	}else{
+		document.frmScore.action="ScoreTest.jsp";
+	}
+}
+</script>
+</head>
+<body>
+<h1>시험 점수를 입력해 주세요</h1>
+<form name=frmScore>
+	시험점수 : <input type="text" name="score"/><br>
+	<input type="submit" value="변환하기" onclick="fn_check()"/>
+
+</form>
+</body>
+</html>

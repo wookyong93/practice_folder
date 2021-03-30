@@ -1,0 +1,6 @@
+package sec03.brd01;
+
+public class BoardService {
+	BoardDTO dto;
+	public Board
+}

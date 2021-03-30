@@ -1,0 +1,13 @@
+package sec02.ex01;
+
+import java.sql.Date;
+
+public class MemberBean {
+	private String id;
+	private String pwd;
+	private String name;
+	private String email;
+	private Date joinDate;
+
+	
+}

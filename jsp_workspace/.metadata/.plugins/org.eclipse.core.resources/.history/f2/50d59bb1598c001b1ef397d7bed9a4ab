@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import="java.util.*,ex01.*"
+    isELIgnored="false"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <jsp:useBean id="Bdto" class="ex01.BoardDTO"/>
+    <jsp:useBean id="Bdao" class="ex01.BoardDAO"/> 
+    <%request.setCharacterEncoding("UTF-8");
+    String id=request.getParameter("id");
+    int no = Integer.parseInt(request.getParameter("no"));
+    List view = Bdao.viewBoard(no);
+    %>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 게 시 글 </title>
+</head>
+<body>
+	<table align="center" width="800">
+	<c:forEach var="view" items="<%=view %>">
+	<tr align="center">
+		<th width="10%">${view.articleNO}</th>
+		<th width="60%">${view.title}</th>
+		<th width="10%">${view.id}</th>
+		<th width="10%">${view.writeDate}</th>
+	</tr>
+	<tr align="center">
+		<td colspan="4" width="80%" height="400">${view.content}</td>
+	</tr>
+	<tr align="center">
+		<td colspan="4" width="80%">이미지 : 
+		<c:if test="${view.ImageFileName!='null'}">
+			<b>${view.ImageFileName}</b>
+		</c:if>
+		<c:if test="${view.ImageFileName == 'null' }">
+			<b>저장된 이미지 없음</b>
+		</c:if>
+		</td>
+	</tr>
+	</c:forEach>
+	</table>
+</body>
+</html>

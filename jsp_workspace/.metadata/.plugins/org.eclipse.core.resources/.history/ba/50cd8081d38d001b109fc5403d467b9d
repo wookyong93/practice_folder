@@ -1,0 +1,50 @@
+package board;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+public class BoardDAO {
+	private Connection con;
+	private PreparedStatement pstmt;
+	private DataSource dataFactory;
+	
+		public BoardDAO() {
+			try {
+			Context ctx = new InitialContext();
+			Context ctxenv = (Context)ctx.lookup("java:/comp/env");
+			dataFactory = (DataSource)ctxenv.lookup("jdbc/oracle");
+		
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		public List<BoardDTO> aticleList(){
+			List<BoardDTO> aList = new ArrayList<BoardDTO>();
+			try {
+				con = dataFactory.getConnection();
+				String sql = "SELECT * FROM t_board";
+				pstmt = con.prepareStatement(sql);
+				ResultSet rs = pstmt.executeQuery();
+				
+				while(rs.next()) {
+					BoardDTO bDto = new BoardDTO();
+					bDto.setArticleNO(rs.getInt("articleNO"));
+					bDto.setTitle(rs.getString("title"));
+					bDto.setContent(rs.getString("content"));
+					bDto.setWriteDate(rs.getDate("writeDate"));
+					aList.add(bDto);
+				}
+				
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			return aList;
+		}
+}

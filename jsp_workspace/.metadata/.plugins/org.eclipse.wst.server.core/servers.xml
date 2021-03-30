@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="18">
+    <list key="modules" value0="pro12::org.eclipse.jst.jee.server:pro12::jst.web::4.0" value1="pro11::org.eclipse.jst.jee.server:pro11::jst.web::4.0" value10="pro17::org.eclipse.jst.jee.server:pro17::jst.web::4.0" value2="pro06::org.eclipse.jst.jee.server:pro06::jst.web::4.0" value3="pro13::org.eclipse.jst.jee.server:pro13::jst.web::3.0" value4="pro14::org.eclipse.jst.jee.server:pro14::jst.web::3.0" value5="Exam::org.eclipse.jst.jee.server:Exam::jst.web::4.0" value6="test_Kwonwookyeong::org.eclipse.jst.jee.server:test_Kwonwookyeong::jst.web::4.0" value7="평가 정리::org.eclipse.jst.jee.server:평가 정리::jst.web::4.0" value8="pro15::org.eclipse.jst.jee.server:pro15::jst.web::4.0" value9="pro16::org.eclipse.jst.jee.server:pro16::jst.web::4.0"/>
+  </server>
+</servers>

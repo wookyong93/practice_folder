@@ -1,0 +1,17 @@
+package ex01;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.sql.DataSource;
+
+public class ExMemberDAO {
+		private Connection con;
+		private PreparedStatement pstmt;
+		private DataSource dataFactory;
+	public ExMemberDAO() {
+		try {}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

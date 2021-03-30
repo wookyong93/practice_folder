@@ -1,0 +1,11 @@
+package ex01;
+
+import java.sql.Date;
+
+public class ExMemberDTO {
+	private String user_id;
+	private String user_pw;
+	private String user_name;
+	private String user_email;
+	private Date joinDate;
+}

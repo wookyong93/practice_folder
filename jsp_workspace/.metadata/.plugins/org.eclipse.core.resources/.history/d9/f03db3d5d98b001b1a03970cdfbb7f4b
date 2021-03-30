@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import ="ex01.*"
+    isELIgnored="false"
+    %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <jsp:useBean id="dao" class="ex01.ExMemberDAO"/>
+    
+    <%
+    	request.setCharacterEncoding("UTF-8");
+    	String id = request.getParameter("user_id");
+    	boolean result = dao.idChk(id);
+    %>
+    <c:set var= "result" value="<%=result %>"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<c:if test="${result == false}">
+	<script>alert('가입가능한 아이디 입니다.');location.href='memberForm.jsp?id=<%=id%>'</script>
+</body>
+</html>

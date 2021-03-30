@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 셀렉터 연습2</title>
+<script src="http:code.jquery.com/jquery-latest.min.js"></script>
+ <!-- 최신 버전의 제이쿼리를 사용하기 위한 jquery CDN 호출 방법 
+ 오타 없이 잘작성할수 있도록 외우자. -->
+ <script type="text/javascript">
+ </script>
+</head>
+<body>
+	<div>
+		<p id="article"></p>
+	</div>
+	<input type="button" value="추가하기" onclick="addHtml()"/>
+</body>
+</html>

@@ -1,0 +1,14 @@
+package sec03.brd01;
+
+import java.util.List;
+
+public class BoardService {
+	BoardDAO dao;
+	public BoardService() {
+		dao = new BoardDAO();
+	}
+	public List<ArticleDTO> listArticles(){
+		List<ArticleDTO> articlesList = dao.selectAllArticles();
+		return articlesList;
+	}
+}

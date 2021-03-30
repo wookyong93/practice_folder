@@ -1,0 +1,11 @@
+package board;
+
+import java.sql.Date;
+
+public class BoardDTO {
+	private int articleNO;
+	private String title;
+	private String content;
+	private String id;
+	private Date writeDate;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 셀렉터 연습1</title>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+ <!-- 제이쿼리를 사용하기 위한 jquery CDN 호출 방법 -->
+<script type="text/javascript">
+	/* $(documnent) = > document의 DOM(Document Object Mdoel)이 
+	로드되는 이벤트 처리 함수입니다.*/
+	$(document).ready(function(){
+		alert($("#unique2").html());
+		/* $("#unique2").html => #id => #unique2 라는 아이디를 가지고 있는
+		태그를 검색한후 .html()메서드를 이용하여 태그의 값을 호출한다. */
+	});
+</script>
+</head>
+<body>
+	<div class="class1">안녕하세요.</div>
+	<div id="unique2">제이쿼리입니다!!</div>
+	<div id="unique3">
+		<p>제이쿼리는 아주 쉽습니다!!</p>
+	</div>
+</body>
+</html>

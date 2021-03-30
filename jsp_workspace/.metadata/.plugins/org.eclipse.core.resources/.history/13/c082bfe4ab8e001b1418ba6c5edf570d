@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 셀렉터 연습1</title>
+<script src="http://code.jquery.com/jquery-2.2.1min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert($("unique2").html());
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

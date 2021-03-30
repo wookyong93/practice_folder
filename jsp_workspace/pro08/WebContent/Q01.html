@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인창</title>
+<script>
+function fn_login() {
+	
+	var frm = document.frmLogin;
+	frm.method = "post";
+	frm.action = "quiz01";
+	frm.submit();
+}
+
+
+</script>
+</head>
+<body>
+<form name = frmLogin>
+	아이디 : <input type='text' name='user_id'>
+	패스워드 : <input type='password' name='user_pwd'>
+	<input type = 'submit' neme='login' value='LOGIN' onclick ='fn_login()'>
+	
+
+</form>
+
+</body>
+</html>

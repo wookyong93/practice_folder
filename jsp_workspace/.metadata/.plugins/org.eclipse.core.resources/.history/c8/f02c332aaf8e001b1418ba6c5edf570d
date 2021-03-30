@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제이쿼리 연습</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	function addText(){
+		var value =  $("#t_input").val();
+		/* $("#t_input").val() => 아이디가 t_input인 태그의 입력값을 가져온다. */
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="t_input"/>
+	<input type="button" value="입력하기" onclick="addText()"/>
+	<div>
+		<input type="text" id="t_output" disabled/>
+	</div>
+</body>
+</html>

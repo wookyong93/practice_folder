@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+    import = "ex01.*"
+    isELIgnored="false"
+    %>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <jsp:useBean id="dao" class="ex01.MemberDAO"/>
+    <%
+    request.setCharacterEncoding("UTF-8");
+    String id = request.getParameter("id");
+    String pwd = request.getParameter("pwd");
+    boolean result =dao.loginChk(id, pwd);		
+    %>
+    <c:set var="result" value="<%=result %>"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<c:if test="${result == true }">
+<script type="text/javascript"> alert('<%=id%>님 로그인하셨습니다.');location.href="boardMain.jsp";</script>
+</c:if>
+<c:if test="${result==false}">
+</c:if>
+</body>
+</html>

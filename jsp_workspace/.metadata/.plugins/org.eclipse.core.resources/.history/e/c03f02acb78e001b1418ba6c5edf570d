@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이디 중복 체크</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript"></script>
+
+</head>
+<body>
+	<input type="text" id="t_id"/>
+	<input type="button" id="btnDuplicate" value="id중복체크하기" onclick="fn_process()"/>
+	<br><br>
+	<div id="messege"></div>
+</body>
+</html>

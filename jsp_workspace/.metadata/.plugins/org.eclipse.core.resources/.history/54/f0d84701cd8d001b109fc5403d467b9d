@@ -1,0 +1,25 @@
+package member;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+public class MemberDAO {
+	private Connection con;
+	private PreparedStatement pstmt;
+	private DataSource dataFactory;
+	
+		public MemberDAO() {
+			try {
+			Context ctx = new InitialContext();
+			Context ctxenv = (Context)ctx.lookup("java:/comp/env");
+			dataFactory = (DataSource)ctxenv.lookup("jdbc/oracle");
+		
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+}

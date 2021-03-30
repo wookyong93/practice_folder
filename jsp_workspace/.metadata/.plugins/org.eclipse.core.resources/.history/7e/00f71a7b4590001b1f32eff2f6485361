@@ -1,0 +1,12 @@
+package sec03.brd01;
+
+public class ArticleDTO {
+	private int level;
+	private int articleNO;
+	private int parentNO;
+	private String title;
+	private String content;
+	private String imageFileName;
+	private String id;
+	private Date writeDate;
+}

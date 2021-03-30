@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ajax 테스트1</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	function fn_process(){
+		$.ajax({
+			type:"get",
+			/* get 방식으로 전달 */
+			dataType:"text",
+			/*text 타입으로 데이터를 전달한다*/
+			async:flase,
+			/* false 인경우에 동기식으로 처리한다 */
+			url:"http://localhost:8090/pro16/ajaxtest1",
+			/* 전송할 서블릿을 지정한다. */
+			data : {param:"Hello,jQuery!!!"},
+			/* 서버로 매개변수와 값을 설정한다. */
+			success:function(data,textStatus){
+				$('#massege').append(data);
+			},
+			//전송과 응답이 성공했을 경우의 작업을 설정한다.
+			error:function(data,textStatus){
+				alert('에러가 발생하였습니다.');
+			},
+			//전송과 응답이 실패했을 경우의 작업을 설정한다.
+			complete:function(data,textStatus){
+				alert('작업을 완료했습니다.');
+			}
+			//전송과 응답이 모두 완료된 후에 수행할 작업을 설정한다.
+		});
+	}
+
+</script>
+</head>
+<body>
+<input type="button" value="전송하기" onclick="fn_process()"/><br><br>
+<div id="massege"></div>
+</body>
+</html>

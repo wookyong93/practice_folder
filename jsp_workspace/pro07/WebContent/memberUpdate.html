@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보 수정</title>
+<script>
+function fn_updateMember(){
+	var frmUpdate=document.frmUpdate;
+	var id = frmUpdate.uId.value;
+	var pwd = frmUpdate.uPwd.value;
+	var name = frmUpdate.uName.value;
+	var email =frmUpdate.uEmail.value;
+	if(id.length == 0 || id==""){
+		alert("아이디는 필수입력입니다.")
+	}else if(pwd.length == 0||pwd==""){
+		alert("암호는 필수입력입니다.")
+	}else if (name.length==0 || name == ""){
+		alert("이름은 필수입력입니다.")
+	}else if(email.length ==0 || email ==""){
+		alert("이메일은 필수입력입니다.")
+	}else{
+		frmUpdate.method ="post";
+		frmUpdate.action ="member3";
+		frmUpdate.submit();
+	}
+
+}
+function cancel(){
+	location.href="http://localhost:8090/pro07/member3";
+}
+</script>
+</head>
+<body>
+	<form name =frmUpdate>
+	<table>
+		<th>회원수정창 </th>
+		<tr>
+				<td>아이디</td>
+				<td><input type="text" name="uId"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="uPwd"></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="uName"></td>
+			</tr>
+			<tr>
+				<td>이메일</td>
+				<td><input type="text" name="uEmail"></td>
+			</tr>
+	</table>
+	<input type="button" value = "회원정보 수정" onclick ="fn_updateMember()">
+	<input type="button" value ="취소" onclick = "cancel()">
+	<input type="hidden" name="command" value="upadteMember">
+	</form>
+</body>
+</html>
