@@ -1,0 +1,15 @@
+package com.spring.member.service;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+
+public class MemberServiceImpl implements MemberService{
+
+	@Override
+	public List listMembers() throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

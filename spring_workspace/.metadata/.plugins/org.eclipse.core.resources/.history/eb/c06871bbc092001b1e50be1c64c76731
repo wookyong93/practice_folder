@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mapper member 로 설정을 해준다 .
+ -->
+ <!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+   <mapper namespace="mapper.member"><!-- member.xml의 네임스페이스를 지정합니다. -->
+   		<resultMap id="memResult" type="memberVO"><!-- SQL문을 실행한 후 반환되는 레코드들을 memberVO빈에 저장합니다. -->
+   			<result property="id" column="id"/>
+   			<result property="pwd" column="pwd"/>
+   			<result property="name" column="name"/>
+   			<result property="email" column="email"/>
+   			<result property="joinDate" column="joinDate"/>	
+   			<!-- 레코드의 컬럼이름에 대해 memberVO의 같은속성에 값을 설정합니다. -->
+   		</resultMap>
+   	<!-- <mapper namespace="mapper.member">
+   		<resultMap id="memResult" type="java.util.HashMap">
+   			 <result property="id" column="id" />
+     	 <result property="pwd" column="pwd" />
+      	<result property="name" column="name" />
+     	 <result property="email" column="email" />
+      	<result property="joinDate" column="joinDate" />
+   		</resultMap>
+   		 -->
+   		<select id="selectAllMemberList" resultMap="memResult">
+   		<!-- DAO에서 id를 이용해 해당 SQL문을 호출합니다. 반환되는 레코드를 memResult에 저장합니다. -->
+   			<![CDATA[
+   			 SELECT * FROM t_member ORDER BY joinDate DESC
+   			]]>
+   		</select>
+   		<select id="selectName" resultType="String">
+   		<!-- 지정할 메서드 명과 받아올 타입 설정하는법입니다.  -->
+   		<!-- 호출된 값 String(문자열)을 selectName 메서드로 반환합니다.-->
+   			<![CDATA[
+   				SELECT name FROM t_member WHERE id='hong'
+   			]]>
+   		</select>
+   		<select id="selectPwd" resultType="int">
+   			<![CDATA[
+   				SELECT pwd FROM t_member WHERE id ='hong' 
+   			]]>
+   		</select>
+   		<select id="selectMemberById" resultType="memberVO" parameterType="Stirng">
+   			<![CDATA[
+   				SELECT * FROM t_member where id=#{id}
+   			]]>
+   		</select>
+   		<select id="selectMemberByPWD" resultMap="memResult" parameterType="int">
+   			<![CDATA[
+   				SELECT * FROM t_member WHERE pwd=#{pwd}
+   			]]>
+   		</select>
+   </mapper>

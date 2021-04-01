@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id ="memberService" class="com.spring.ex03.MemberServiceImpl">
+	<!-- memberService 라는 id의 클레스 객체 생성 -->
+		<property name="memberDAO" ref="memberDAO"/>
+		<!-- property 는set를 사용하여 값을 주입할때 사용 -->
+	</bean>
+	<bean id="memberDAO" class="com.spring.ex03.MemberDAOImpl"/>
+	<!-- memberDAO = new MemberDAOImpl와 동일한 뜻이다 . -->
+</beans>

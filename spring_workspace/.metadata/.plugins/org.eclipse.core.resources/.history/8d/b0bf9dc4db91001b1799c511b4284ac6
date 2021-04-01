@@ -1,0 +1,15 @@
+package com.spring.member.dao;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+
+public class MemberDAOImpl implements MemberDAO{
+
+	@Override
+	public List selectAllMembers() throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

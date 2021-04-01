@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.spring.ex01;
+
+/**
+ * @author 권우경
+ *
+ */
+public class PersonServiceImpl {
+
+}

@@ -1,0 +1,21 @@
+package com.spring.ex01;
+
+import java.lang.reflect.Method;
+
+import org.aopalliance.intercept.MethodInvocation;
+
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
+public class LoggingAdvice implements MethodInterceptor{
+
+	@Override
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+
+		System.out.println("[메서드 호출전 : logginAdvice");
+		System.out.println(invocation.getMethod()+"메서드 호출전");
+		Object object = invocation.proceed();
+		return null;
+	}
+
+}

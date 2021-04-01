@@ -1,0 +1,23 @@
+package com.spring.member.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class MemberDAOImpl implements MemberDAO{
+	private JdbcTemplate jdbcTemplate;
+	public void setDataSource(DataSource datasource) {
+		this.jdbcTemplate = new JdbcTemplate(datasource);
+	}
+	@Override
+	public List selectAllMembers() throws DataAccessException {
+		String query = "SELECT id,pwd,name,email,joinDate FROM t_member ORDER BY joinDate DESC";
+		List membersList = new ArrayList();
+		return null;
+	}
+
+}

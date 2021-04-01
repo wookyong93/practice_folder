@@ -1,0 +1,25 @@
+package com.spring.member.service;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+
+import com.spring.member.dao.MemberDAO;
+
+public class MemberServiceImpl implements MemberService {
+	private MemberDAO memberDAO;
+
+	public void setMemberDAO(MemberDAO memberDAO) {
+		this.memberDAO = memberDAO;
+		//property를 이용하였으므로 반드시 setter를 구현해야합니다.
+	}
+
+	@Override
+	public List listMembers() throws DataAccessException {
+		List membersList = null;
+		membersList = memberDAO.selectAllMembers();
+		//addObject() 메서드를 이용해 조회한 회원 정보를 바인딩합니다.
+		return membersList;
+	}
+
+}

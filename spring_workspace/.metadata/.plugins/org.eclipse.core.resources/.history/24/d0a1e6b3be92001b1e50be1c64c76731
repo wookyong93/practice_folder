@@ -1,0 +1,24 @@
+package com.spring.ex03;
+
+
+import java.io.Reader;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+public class MemberDAO {
+	public static SqlSessionFactory sqlMapper=null;
+	
+	private static SqlSessionFactory getInstance() {
+		if(sqlMapper==null) {
+			try {
+				String resource = "mybatis/SqlMapConfig.xml";
+				Reader reader = Resources.getResourceAsReader(resource);
+				sqlMapper = new SqlSessionFactoryBuilder().build(reader);
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	<beans>
+   <bean id="personService" class="com.spring.ex01.PersonServiceImpl">
+      <property name="name">
+         <value>홍길동</value>
+      </property>
+   </bean>
+ <!--   
+   <bean id="personService1" class="com.spring.ex02.PersonServiceImpl">
+        <constructor-arg   value="이순신" />
+   </bean>
+   
+   <bean id="personService2" class="com.spring.ex02.PersonServiceImpl">
+       <constructor-arg   value="손흥민"  />
+       <constructor-arg   value="23"  />
+   </bean>
+    -->
+</beans>
+		<!-- beans = > 빈들 생성할수 있는 틀이다. 
+			bean  => 빈이란 클레스를 객체화 시킨것이다.
+			id = 생성한 빈의 id 를 설정하는 것이고 class=> 클레스가 있는 경로를 설정한다.
+			bean 태그에 personServiceImpl라는 객체를 생성하고 생성한 빈의 아이디를 지정한다. 
+			property => 객체의 속성값을 호출하는 역할  
+			 value = 해당값을 입력하거나 초기화를 위한 태그이다.
+		 -->
+		<!-- 
+			<bean id ="peronService1" class="com.spring.ex02.PersonServiceImpl">
+				<constructor-arg value="이순신"/>
+			</bean>
+			<bean id ="peronService2" class="com.spring.ex02.PersonServiceImpl">
+				<constructor-arg value="손흥민"/>
+				<constructor-arg value="23"/>
+			</bean>
+		 -->

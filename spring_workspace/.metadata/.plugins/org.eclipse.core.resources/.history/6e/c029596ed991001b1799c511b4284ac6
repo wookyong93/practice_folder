@@ -1,0 +1,17 @@
+package com.spring.member.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
+
+public class MemberControllerImpl extends MultiActionController implements MemberCotroller{
+
+	@Override
+	public ModelAndView listMembers(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
