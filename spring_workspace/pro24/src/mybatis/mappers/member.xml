@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.member">
+	<resultMap id="memResult" type="memberVO">
+		<result property="id" column="id" />
+        <result property="pwd" column="pwd" />
+        <result property="name" column="name" />
+        <result property="email" column="email" />
+        <result property="joinDate" column="joinDate" />
+	</resultMap> 
+	<!-- memberVO 에 id,pwd,name,email,joinDate 를 저장하는바익 위의 방식은 클레스객체로 받는 방식
+	아래의 방식은 map으로 받는 방식이다. resultMap 안에 type에 따라 저장되는 객체가 다르다. -->
+	<!-- 
+	<resultMap id="memResult" type="java.util.HashMap">
+      <result property="id" column="id" />
+      <result property="pwd" column="pwd" />
+      <result property="name" column="name" />
+      <result property="email" column="email" />
+      <result property="joinDate" column="joinDate" />
+   </resultMap> -->
+
+	<!-- id는 사용할 메서드 이름과 같도록 한다 resultMap으로 반환할객체 타입을 지정한다. -->
+	<select id="selectAllMemberList" resultMap="memResult">
+	<!-- resultType=으로 String,int,List,Map,class 등의 객체로값을 반환받을수있따 
+	즉,select 문같은 결과 반환값에 사용한다..
+	또 parameter type을 사용하면 해당 sql문에 받아온 인자값을 넣어 사용하는것도 가능하다. 
+	#{id} 는 위에 resultMap에 memberVO란 객체에 컬럼명을 저장하였으므로 불러올수있는것이다.-->
+	<!-- <![CDATA[
+		sql쿼리 문 
+	]] -->
+      <![CDATA[
+         select * from t_member	order by joinDate desc	 	
+      ]]>
+	</select>
+
+	<select id="selectName" resultType="String">
+    <![CDATA[
+	select name from t_member
+	where id = 'hong'			
+    ]]>
+	</select>
+	
+	<select id="selectPwd" resultType="int" >
+	  <![CDATA[ 
+	    select pwd from t_member 
+	    where id = 'hong'
+	 ]]>
+	 </select> 
+	 
+	<select id="selectMemberById" resultType="memberVO"  parameterType="String" >
+      <![CDATA[
+         select * from t_member
+         where
+         id=#{id}			
+      ]]>
+	 </select>	
+	
+	<select id="selectMemberByPwd" resultMap="memResult"  parameterType="String" >
+      <![CDATA[
+         select * from t_member
+         where
+         pwd = #{pwd}			
+      ]]>
+    </select>
+    <insert id="insertMember" parameterType="memberVO">
+    	<![CDATA[
+    		INSERT INTO t_member(id,pwd,name,email) 
+    		VALUES(#{id},#{pwd},#{name},#{email})
+    	]]>
+    </insert>
+    <insert id="insertMember2" parameterType="java.util.Map">
+    	<![CDATA[
+    		INSERT INTO t_member(id,pwd,name,email) 
+    		VALUES(#{id},#{pwd},#{name},#{email})
+    	]]>
+    </insert>
+    <update id ="updateMember" parameterType="memberVO">
+    	<![CDATA[
+    	UPDATE t_member SET pwd=#{pwd},name=#{name},email=#{email}  WHERE id=#{id}
+    	]]>
+    </update>
+    <delete id="deleteMember" parameterType="String">
+    	<![CDATA[
+    		DELETE FROM t_member WHERE id=#{id}
+    	]]>
+    </delete>
+    <!-- 동적 SQL문  -->
+  <!--   <select id ="searchMember" parameterType="memberVO" resultMap="memResult">
+    	<![CDATA[
+    	SELECT * FROM t_member
+    	]]>
+    	<where>
+    		<if test="name !='' and name!=null">
+    			name=#{name}
+    		</if>
+    		<if test="email !='' and email!=null">
+    			and email=#{email}
+    		</if>
+    	</where>
+    	order by joinDate desc
+    </select> -->
+   
+   <sql id="a">
+    <![CDATA[
+      select * from t_member
+     ]]> 
+   </sql>  
+        
+  <select id="searchMember" parameterType="memberVO" resultMap="memResult">
+	     <include refid="a" />
+	  <!--  <![CDATA[
+         select * from t_member 
+      ]]> -->
+	  
+       <where>
+		  <choose>
+		      <when test="name != '' and name != null and  email != '' and email != null">
+			     name=#{name} and email=#{email}
+		      </when>
+		      <when test="name != '' and name != null">
+			     name = #{name}
+		      </when>
+		      <when test="email !='' and email != null">
+			    email = #{email}
+		      </when>
+	      </choose>
+       </where>
+       order by joinDate desc
+   </select>
+   
+   <select id="foreachSelect" resultMap="memResult" parameterType="java.util.Map">
+      <include refid="a" />
+      <!-- <![CDATA[
+        select * from t_member 
+          
+      ]]>
+       -->
+      where name in
+      <foreach item="item" collection="list" open="(" separator="," close=")" >
+         #{item}
+      </foreach>
+      order by joinDate desc
+   </select>
+    <insert id="foreachInsert"  parameterType="java.util.Map">
+      <foreach item="item"  collection="list"   open="INSERT ALL" separator=" " close="SELECT * FROM DUAL" >
+          INTO  t_member(id, pwd, name, email)
+          VALUES  (#{item.id},
+                    #{item.pwd},
+                    #{item.name},
+                    #{item.email})
+      </foreach>
+   </insert>
+   <!--  like 검색 -->
+   <select id="selectLike" resultMap="memResult"  parameterType="String" >
+      <![CDATA[
+         select * from t_member
+         where
+         name like '%' || #{name} || '%'
+         		
+      ]]>
+      <!-- 오라클에서는 문자열을 연결할떄 || 사용하여 연결하여야한다. -->
+    </select>
+    </mapper>
