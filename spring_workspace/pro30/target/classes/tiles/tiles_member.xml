@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache.Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<!-- tiles 를 사용한 pageLayout 설정 -->
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/common/layout.jsp">
+	<!-- 레이아웃 페이지를 설정 -->
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"/>
+		<put-attribute name="side" value="/WEB-INF/views/common/side.jsp"/>
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"/>
+		<!-- 각각 해당 태그에 사용할 JSP 파일을 지정해준다. -->
+	</definition>
+	
+	<definition name="main" extends="baseLayout">
+		<put-attribute name="title" value="메인페이지"/>
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+	</definition>
+	<!--main이라는 이름 값을 지정하고 , baseLayout 을 상속받아 공란이 title에 들어갈 타이틀명과 body 부분에 들어갈 jsp 파일을 지정한다. -->
+	<definition name="/member/listMembers" extends="baseLayout">
+      <put-attribute name="title" value="회원목록창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/listMembers.jsp" />
+   </definition>
+   
+
+    <!-- loginform 호출시 해당 화면으로 이동 -->
+   <definition name="/member/loginForm" extends="baseLayout">
+      <put-attribute name="title" value="로그인창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/loginForm.jsp" />
+   </definition>
+   <!-- memberForm 호출시 해당 화면으로 이동 -->
+   <definition name="/member/memberForm" extends="baseLayout">
+      <put-attribute name="title" value="회원가입창" />
+      <put-attribute name="body" value="/WEB-INF/views/member/memberForm.jsp" />
+   </definition>
+</tiles-definitions>

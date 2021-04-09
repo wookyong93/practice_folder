@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+	
+	<!-- sql 에서 사용할 객체지정 -->
+	<configuration>
+		<typeAliases>
+			<typeAlias type="com.test.wookyeong.address.VO.AddressVO" alias="addressVO"/>
+		</typeAliases>
+	</configuration>

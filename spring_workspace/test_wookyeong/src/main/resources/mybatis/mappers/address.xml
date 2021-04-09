@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace -->
+<mapper namespace="mapper.addr">
+	<!-- 레코드 저장할 객체 지정 -->
+	<resultMap type="addressVO" id="addressResult">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="age" column="age"/>
+		<result property="phone" column="phone"/>
+		<result property="address" column="address"/>	
+	</resultMap>
+	
+	<!-- 전체 주소록 조회 -->
+	<!-- 아이디번호가 높을수록 위로 조회 -->
+	<select id="selectAllAddress" resultMap="addressResult">
+		<![CDATA[
+			SELECT * FROM t_address ORDER BY id DESC
+		]]>
+	</select>
+	<!-- 주소 등록 addressVO 객체로 저장하여 넘겨준다. -->
+	<insert id="insertAddress" parameterType="addressVO">
+		<![CDATA[
+		INSERT INTO t_address VALUES(addr_seq.NEXTVAL,#{name},#{phone},#{age},#{address})
+		]]>
+	</insert>
+	<!-- 등록한 주소 조회 -->
+	<select id="addressView" resultMap="addressResult" parameterType="int">
+		<![CDATA[
+			SELECT * FROM t_address WHERE id=#{id}
+		]]>
+	</select>
+	<!-- 주소 수정  -->
+	<update id="modifyAddress" parameterType="addressVO">
+		<![CDATA[
+			UPDATE t_address SET name=#{name}, age=#{age}, phone=#{phone}, address=#{address}
+			WHERE id=#{id}
+		]]>
+	</update>
+	<delete id="deleteAddress" parameterType="int">
+		<![CDATA[
+			DELETE FROM t_address WHERE id=#{id}
+		]]>
+	</delete>
+</mapper>
